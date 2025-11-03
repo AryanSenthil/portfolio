@@ -12,6 +12,19 @@ export default function PublicationsSection() {
     initialData: []
   });
 
+  const renderAuthors = (authorsString) => {
+    const parts = authorsString.split('Aryan Senthil');
+    if (parts.length === 1) return authorsString;
+
+    return (
+      <>
+        {parts[0]}
+        <strong>Aryan Senthil</strong>
+        {parts[1]}
+      </>
+    );
+  };
+
   return (
     <section id="publications" className="py-24 bg-white dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-6">
@@ -50,7 +63,7 @@ export default function PublicationsSection() {
                   <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                     {pub.title}
                   </h3>
-                  <p className="text-slate-600 dark:text-slate-300 mb-2">{pub.authors}</p>
+                  <p className="text-slate-600 dark:text-slate-300 mb-2">{renderAuthors(pub.authors)}</p>
                   <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">
                     <span className="font-medium text-blue-600 dark:text-blue-400">{pub.venue}</span> • {pub.year}
                   </p>
