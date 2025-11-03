@@ -1,0 +1,60 @@
+{
+  "models": {
+    "classification_model": {
+      "model_directory": "/home/ari/Documents/Onion_Sensor/models/classification_model",
+      "status": "exported",
+      "absolute_paths": {
+        "trained_model": "/home/ari/Documents/Onion_Sensor/models/classification_model/models/trained/model.keras",
+        "export_model": "/home/ari/Documents/Onion_Sensor/models/classification_model/export/saved_model",
+        "training_plots": "/home/ari/Documents/Onion_Sensor/models/classification_model/training/plots",
+        "plots_metadata": "/home/ari/Documents/Onion_Sensor/models/classification_model/training/plots_metadata.json",
+        "dataset_info": "/home/ari/Documents/Onion_Sensor/models/classification_model/metadata/dataset_info.json",
+        "training_summary": "/home/ari/Documents/Onion_Sensor/models/classification_model/training/training_summary.json",
+        "export_metadata": "/home/ari/Documents/Onion_Sensor/models/classification_model/export/export_metadata.json"
+      },
+      "classes": [
+        "point",
+        "uniform"
+      ],
+      "num_classes": 2,
+      "performance": {
+        "test_accuracy": 1.0,
+        "test_loss": 0.0022794208489358425
+      }
+    },
+    "regression_model": {
+      "model_type": "wide_and_deep_regression",
+      "model_directory": "/home/ari/Documents/Onion_Sensor/models/regression_model",
+      "status": "exported",
+      "absolute_paths": {
+        "trained_model": "/home/ari/Documents/Onion_Sensor/models/regression_model/models/trained/model.keras",
+        "export_model": "/home/ari/Documents/Onion_Sensor/models/regression_model/export/saved_model",
+        "training_plots": "/home/ari/Documents/Onion_Sensor/models/regression_model/training/plots",
+        "plots_metadata": "/home/ari/Documents/Onion_Sensor/models/regression_model/training/plots_metadata.json",
+        "dataset_info": "/home/ari/Documents/Onion_Sensor/models/regression_model/metadata/dataset_info.json",
+        "training_summary": "/home/ari/Documents/Onion_Sensor/models/regression_model/training/training_summary.json",
+        "export_metadata": "/home/ari/Documents/Onion_Sensor/models/regression_model/export/export_metadata.json"
+      },
+      "features": {
+        "wide_feature": "load_type",
+        "deep_feature": "peaks",
+        "target": "deformation"
+      },
+      "total_samples": 1128,
+      "performance": {
+        "test_loss_mse": 0.0016117565101012588,
+        "test_rmse": 0.04014668741130778
+      },
+      "architecture": {
+        "type": "Wide & Deep",
+        "hidden_layers": [
+          64,
+          64,
+          32,
+          16
+        ],
+        "total_params": 6920
+      }
+    }
+  }
+}

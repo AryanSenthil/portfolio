@@ -10,3 +10,172 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* ============================================
+   APPLE GLASS AESTHETIC - MOTION DESIGN
+   ============================================ */
+
+@layer components {
+  /* Glass Morphism Base */
+  .glass {
+    background-color: rgba(255, 255, 255, 0.08);
+    @apply backdrop-blur-glass;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-dark {
+    background-color: rgba(255, 255, 255, 0.05);
+    @apply dark:backdrop-blur-glass;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+
+  .glass-strong {
+    background-color: rgba(255, 255, 255, 0.12);
+    @apply backdrop-blur-glass-strong;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  }
+
+  /* Glass with light reflection overlay */
+  .glass-reflect {
+    @apply relative overflow-hidden;
+  }
+
+  .glass-reflect::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.05) 100%
+    );
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+
+  .glass-reflect:hover::before {
+    opacity: 1;
+  }
+
+  /* Microinteraction: Button with ripple effect */
+  .btn-primary {
+    @apply relative overflow-hidden transition-all duration-300 ease-signature;
+    @apply hover:scale-[1.02] active:scale-[0.98];
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15), 0 4px 12px rgba(59, 130, 246, 0.2);
+  }
+
+  /* Microinteraction: Card hover lift */
+  .card-float {
+    @apply transition-all duration-400 ease-signature;
+    @apply hover:-translate-y-1 hover:shadow-float dark:hover:shadow-float-dark;
+  }
+
+  /* Focus states with glow */
+  .focus-glow {
+    @apply focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:ring-offset-2;
+    @apply dark:focus:ring-blue-400/50 dark:focus:ring-offset-slate-900;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+
+  .focus-glow:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+  }
+
+  /* Animated border glow */
+  .border-glow {
+    border: 1px solid transparent;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    animation: border-shift 8s ease-in-out infinite;
+  }
+
+  /* Shimmer loading effect */
+  .shimmer {
+    @apply relative overflow-hidden;
+  }
+
+  .shimmer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
+    animation: shimmer 2s ease-in-out infinite;
+  }
+
+  /* Icon animations */
+  .icon-hover {
+    @apply transition-transform duration-300 ease-hover;
+  }
+
+  .icon-hover:hover {
+    @apply scale-110 rotate-3;
+  }
+
+  /* Link underline reveal */
+  .link-underline {
+    @apply relative;
+  }
+
+  .link-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: currentColor;
+    transition: width 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+
+  .link-underline:hover::after {
+    width: 100%;
+  }
+}
+
+@layer utilities {
+  /* Transform utilities for GPU acceleration */
+  .transform-gpu {
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+  }
+
+  /* Smooth scroll behavior */
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY - REDUCED MOTION SUPPORT
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .glass-reflect::before {
+    transition: none !important;
+  }
+}

@@ -1,0 +1,156 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+*$py.class
+*.so
+*.dylib
+
+# Python packages / build artifacts
+build/
+dist/
+wheels/
+pip-wheel-metadata/
+*.egg
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# Package managers
+node_modules/
+.pnp/
+.pnp.js
+yarn-error.log
+npm-debug.log*
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.conda/
+.mamba/
+env.bak/
+venv.bak/
+.python-version
+__pypackages__/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Testing / coverage
+.coverage
+.coverage.*
+.cache/
+.pytest_cache/
+.tox/
+.nox/
+htmlcov/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.mypy_cache/
+.pytype/
+.ruff_cache/
+.pyre/
+
+# Type checker caches
+.pyright/
+.dmypy.json
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+.jupyter/
+*.nbconvert.ipynb
+
+# Logs / diagnostics
+*.log
+*.out
+*.err
+*.tmp
+*.temp
+*.pid
+
+# Editors / IDEs
+.idea/
+.vscode/
+.vs/
+.history/
+.project
+.classpath
+.settings/
+*.iml
+*.code-workspace
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.#*
+
+# AI coding assistants
+.claude
+.codex
+.cursorrules
+
+# Shell scripts
+*.sh
+
+# OS metadata
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.Spotlight-V100/
+.Trashes
+
+# Environment files
+.env
+.env.*
+.dotenv
+.secret
+
+# Databases
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+# Django / Flask / general temp files
+*.log.*
+instance/
+.webassets-cache
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Project-specific
+models/*
+!models/.gitkeep
+draft/
+drafts/
+*.draft
+artifacts/*
+!artifacts/.gitkeep
+outputs/*
+!outputs/.gitkeep
+tmp/
+temp/
+*.bak
+data/*
+!data/.gitkeep
+test_data/*
+!test_data/.gitkeep
+test/
+
+# Keep .gitkeep files to track empty directories
+!.gitkeep

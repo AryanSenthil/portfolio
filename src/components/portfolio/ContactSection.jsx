@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Mail, Linkedin, Send, CheckCircle, Phone, AlertCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import { easings, hoverLift, iconRotate } from '@/utils/motionConfig';
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -58,14 +59,20 @@ export default function ContactSection() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
             Get in Touch
           </h2>
-          <div className="w-20 h-1 bg-blue-600 dark:bg-blue-400 mx-auto rounded-full mb-6"></div>
+          <motion.div
+            initial={{ width: 0 }}
+            whileInView={{ width: 80 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            viewport={{ once: true }}
+            className="h-1 bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-500 dark:to-blue-400 mx-auto rounded-full mb-6"
+          ></motion.div>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
             I'm actively seeking PhD opportunities and would love to hear from professors,
             recruiters, and collaborators interested in my work.
@@ -90,46 +97,64 @@ export default function ContactSection() {
             </div>
 
             <div className="space-y-4">
-              <a
+              <motion.a
                 href="mailto:aryanyaminisenthil@gmail.com"
-                className="flex items-center gap-4 p-4 bg-white dark:bg-slate-800 rounded-xl hover:bg-blue-50 dark:hover:bg-slate-750 transition-all group border border-slate-200 dark:border-slate-700 hover:border-blue-200 dark:hover:border-blue-400"
+                whileHover="hover"
+                variants={hoverLift}
+                className="flex items-center gap-4 p-4 bg-white/80 dark:bg-slate-800/80 backdrop-blur-glass rounded-xl hover:bg-blue-50/80 dark:hover:bg-slate-750/80 transition-all duration-400 group border border-slate-200/50 dark:border-slate-700/50 hover:border-blue-200 dark:hover:border-blue-400 shadow-md hover:shadow-float dark:shadow-glass relative overflow-hidden"
               >
-                <div className="p-3 bg-blue-50 dark:bg-blue-900 rounded-lg group-hover:bg-blue-100 dark:group-hover:bg-blue-800 transition-colors">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-50/20 via-transparent to-white/10 dark:from-blue-900/10 dark:to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                <motion.div
+                  variants={iconRotate}
+                  className="relative z-10 p-3 bg-blue-50/80 dark:bg-blue-900/50 backdrop-blur-sm rounded-lg group-hover:bg-blue-100 dark:group-hover:bg-blue-800/70 transition-all duration-300"
+                >
                   <Mail className="w-6 h-6 text-blue-600 dark:text-blue-400" />
-                </div>
-                <div>
+                </motion.div>
+                <div className="relative z-10">
                   <p className="font-medium text-slate-900 dark:text-white">Email</p>
                   <p className="text-sm text-slate-600 dark:text-slate-300">aryanyaminisenthil@gmail.com</p>
                 </div>
-              </a>
+              </motion.a>
 
-              <a
+              <motion.a
                 href="tel:+14054147622"
-                className="flex items-center gap-4 p-4 bg-white dark:bg-slate-800 rounded-xl hover:bg-blue-50 dark:hover:bg-slate-750 transition-all group border border-slate-200 dark:border-slate-700 hover:border-blue-200 dark:hover:border-blue-400"
+                whileHover="hover"
+                variants={hoverLift}
+                className="flex items-center gap-4 p-4 bg-white/80 dark:bg-slate-800/80 backdrop-blur-glass rounded-xl hover:bg-blue-50/80 dark:hover:bg-slate-750/80 transition-all duration-400 group border border-slate-200/50 dark:border-slate-700/50 hover:border-blue-200 dark:hover:border-blue-400 shadow-md hover:shadow-float dark:shadow-glass relative overflow-hidden"
               >
-                <div className="p-3 bg-blue-50 dark:bg-blue-900 rounded-lg group-hover:bg-blue-100 dark:group-hover:bg-blue-800 transition-colors">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-50/20 via-transparent to-white/10 dark:from-blue-900/10 dark:to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                <motion.div
+                  variants={iconRotate}
+                  className="relative z-10 p-3 bg-blue-50/80 dark:bg-blue-900/50 backdrop-blur-sm rounded-lg group-hover:bg-blue-100 dark:group-hover:bg-blue-800/70 transition-all duration-300"
+                >
                   <Phone className="w-6 h-6 text-blue-600 dark:text-blue-400" />
-                </div>
-                <div>
+                </motion.div>
+                <div className="relative z-10">
                   <p className="font-medium text-slate-900 dark:text-white">Phone</p>
                   <p className="text-sm text-slate-600 dark:text-slate-300">(405) 414-7622</p>
                 </div>
-              </a>
+              </motion.a>
 
-              <a
+              <motion.a
                 href="https://www.linkedin.com/in/aryan-yamini-senthil-18125b243"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 bg-white dark:bg-slate-800 rounded-xl hover:bg-blue-50 dark:hover:bg-slate-750 transition-all group border border-slate-200 dark:border-slate-700 hover:border-blue-200 dark:hover:border-blue-400"
+                whileHover="hover"
+                variants={hoverLift}
+                className="flex items-center gap-4 p-4 bg-white/80 dark:bg-slate-800/80 backdrop-blur-glass rounded-xl hover:bg-blue-50/80 dark:hover:bg-slate-750/80 transition-all duration-400 group border border-slate-200/50 dark:border-slate-700/50 hover:border-blue-200 dark:hover:border-blue-400 shadow-md hover:shadow-float dark:shadow-glass relative overflow-hidden"
               >
-                <div className="p-3 bg-blue-50 dark:bg-blue-900 rounded-lg group-hover:bg-blue-100 dark:group-hover:bg-blue-800 transition-colors">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-50/20 via-transparent to-white/10 dark:from-blue-900/10 dark:to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                <motion.div
+                  variants={iconRotate}
+                  className="relative z-10 p-3 bg-blue-50/80 dark:bg-blue-900/50 backdrop-blur-sm rounded-lg group-hover:bg-blue-100 dark:group-hover:bg-blue-800/70 transition-all duration-300"
+                >
                   <Linkedin className="w-6 h-6 text-blue-600 dark:text-blue-400" />
-                </div>
-                <div>
+                </motion.div>
+                <div className="relative z-10">
                   <p className="font-medium text-slate-900 dark:text-white">LinkedIn</p>
                   <p className="text-sm text-slate-600 dark:text-slate-300">Connect professionally</p>
                 </div>
-              </a>
+              </motion.a>
             </div>
           </motion.div>
 
@@ -137,11 +162,12 @@ export default function ContactSection() {
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.6, ease: easings.emphasis }}
             viewport={{ once: true }}
           >
-            <form onSubmit={handleSubmit} className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-slate-200 dark:border-slate-700">
-              <div className="space-y-5">
+            <form onSubmit={handleSubmit} className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-glass rounded-2xl p-8 shadow-float dark:shadow-glass border border-slate-200/50 dark:border-slate-700/50 relative overflow-hidden group">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50/10 via-transparent to-white/5 dark:from-blue-900/5 dark:to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+              <div className="space-y-5 relative z-10">
                 <div>
                   <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
                     Your Name
