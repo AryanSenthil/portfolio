@@ -1,0 +1,45 @@
+{
+    "name": "Publication",
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "description": "Publication title"
+      },
+      "authors": {
+        "type": "string",
+        "description": "List of authors"
+      },
+      "venue": {
+        "type": "string",
+        "description": "Conference, journal, or publication venue"
+      },
+      "year": {
+        "type": "number",
+        "description": "Publication year"
+      },
+      "url": {
+        "type": "string",
+        "description": "Link to publication (DOI, arXiv, etc.)"
+      },
+      "pdf_url": {
+        "type": "string",
+        "description": "Direct link to PDF"
+      },
+      "abstract": {
+        "type": "string",
+        "description": "Publication abstract"
+      },
+      "order": {
+        "type": "number",
+        "description": "Display order",
+        "default": 0
+      }
+    },
+    "required": [
+      "title",
+      "authors",
+      "venue",
+      "year"
+    ]
+  }

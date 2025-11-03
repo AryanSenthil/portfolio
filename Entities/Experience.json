@@ -1,0 +1,47 @@
+{
+    "name": "Experience",
+    "type": "object",
+    "properties": {
+      "position": {
+        "type": "string",
+        "description": "Job title or position"
+      },
+      "company": {
+        "type": "string",
+        "description": "Company or organization name"
+      },
+      "company_logo": {
+        "type": "string",
+        "description": "URL to company logo"
+      },
+      "location": {
+        "type": "string",
+        "description": "Location of the position"
+      },
+      "start_date": {
+        "type": "string",
+        "description": "Start date (e.g., 'Dec 2021')"
+      },
+      "end_date": {
+        "type": "string",
+        "description": "End date or 'Present'"
+      },
+      "description": {
+        "type": "array",
+        "description": "List of responsibilities and achievements",
+        "items": {
+          "type": "string"
+        }
+      },
+      "order": {
+        "type": "number",
+        "description": "Display order",
+        "default": 0
+      }
+    },
+    "required": [
+      "position",
+      "company",
+      "start_date"
+    ]
+  }

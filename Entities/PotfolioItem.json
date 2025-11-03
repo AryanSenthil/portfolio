@@ -1,0 +1,40 @@
+{
+    "name": "PortfolioItem",
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "description": "Title of the research or problem"
+      },
+      "description": {
+        "type": "string",
+        "description": "Short description or summary"
+      },
+      "content_html": {
+        "type": "string",
+        "description": "Full HTML content to display when expanded"
+      },
+      "html_file_url": {
+        "type": "string",
+        "description": "URL to external HTML file (if using file instead of inline HTML)"
+      },
+      "type": {
+        "type": "string",
+        "enum": [
+          "research",
+          "problem"
+        ],
+        "description": "Type of portfolio item"
+      },
+      "order": {
+        "type": "number",
+        "description": "Display order",
+        "default": 0
+      }
+    },
+    "required": [
+      "title",
+      "description",
+      "type"
+    ]
+  }
