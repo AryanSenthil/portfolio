@@ -35,13 +35,13 @@ export default function ExperienceSection() {
         </motion.div>
 
         <div className="relative">
-          {/* Timeline line - connects between circle centers only */}
+          {/* Timeline line - connects between circles */}
           {experiences.length > 1 && (
             <div
               className="absolute left-6 w-0.5 bg-slate-700 dark:bg-slate-600 hidden md:block"
               style={{
                 top: 'calc(3rem + 1.5rem)',
-                bottom: `calc(3rem + 1.5rem)`
+                height: `calc(100% - ${experiences.length * 3}rem - 9rem)`
               }}
             ></div>
           )}

@@ -8,6 +8,7 @@ import HeroSection from '../components/portfolio/HeroSection';
 import AboutSection from '../components/portfolio/AboutSection';
 import ExperienceSection from '../components/portfolio/ExperienceSection';
 import PublicationsSection from '../components/portfolio/PublicationsSection';
+import SkillsSection from '../components/portfolio/SkillsSection';
 import InvolvementSection from '../components/portfolio/InvolvementSection';
 import PortfolioCard from '../components/portfolio/PortfolioCard';
 import HTMLViewer from '../components/portfolio/HTMLViewer';
@@ -29,7 +30,7 @@ export default function Portfolio() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'experience', 'publications', 'research', 'problems', 'involvement', 'contact'];
+      const sections = ['home', 'about', 'experience', 'publications', 'research', 'problems', 'skills', 'involvement', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -149,6 +150,8 @@ export default function Portfolio() {
           )}
         </div>
       </section>
+
+      <SkillsSection />
 
       <InvolvementSection />
 

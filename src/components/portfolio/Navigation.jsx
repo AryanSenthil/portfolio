@@ -30,6 +30,7 @@ export default function Navigation({ activeSection }) {
     { id: 'publications', label: 'Publications' },
     { id: 'research', label: 'Research' },
     { id: 'problems', label: 'Projects' },
+    { id: 'skills', label: 'Skills' },
     { id: 'contact', label: 'Contact' }
   ];
 
