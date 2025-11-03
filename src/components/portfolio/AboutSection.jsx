@@ -13,19 +13,19 @@ export default function AboutSection() {
     {
       icon: Award,
       title: 'Achievements',
-      description: 'Academic excellence & recognition',
-      detail: 'Dean\'s List • Published Researcher'
+      description: 'Dean\'s List recipient',
+      detail: 'Recognized for academic excellence'
     },
     {
       icon: BookOpen,
       title: 'Publications',
-      description: 'Contributing to the field',
-      detail: 'Conference papers & journals'
+      description: '2024 ASC Conference Paper',
+      detail: 'Published on structural health monitoring'
     },
     {
       icon: Target,
       title: 'Goals',
-      description: 'Pursuing PhD opportunities',
+      description: 'Pursuing CS PhD opportunities',
       detail: 'Focus on Deep Learning & Autonomous Systems'
     }
   ];

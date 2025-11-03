@@ -4,6 +4,7 @@ import { base44 } from '@/api/base44Client';
 import { motion } from 'framer-motion';
 
 import Navigation from '../components/portfolio/Navigation';
+import ScrollProgress from '../components/portfolio/ScrollProgress';
 import HeroSection from '../components/portfolio/HeroSection';
 import AboutSection from '../components/portfolio/AboutSection';
 import ExperienceSection from '../components/portfolio/ExperienceSection';
@@ -59,6 +60,7 @@ export default function Portfolio() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-slate-900 transition-colors duration-200">
+      <ScrollProgress />
       <Navigation activeSection={activeSection} />
 
       <HeroSection />
