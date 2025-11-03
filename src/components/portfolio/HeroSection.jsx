@@ -12,7 +12,7 @@ export default function HeroSection() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left: Portrait */}
           <div className="flex flex-col items-center md:items-end gap-6 order-1 md:order-none">
-            <div className="bg-slate-100 dark:bg-slate-700 rounded-3xl overflow-hidden w-full max-w-sm md:w-[36rem] md:h-[42rem] aspect-[3/3.5] flex items-center justify-center shadow-2xl dark:shadow-slate-900/50">
+            <div className="bg-slate-100 dark:bg-slate-700 rounded-3xl overflow-hidden w-full max-w-sm md:max-w-md lg:max-w-lg aspect-[3/3.5] flex items-center justify-center shadow-2xl dark:shadow-slate-900/50">
               <img src="/portfolio/profile.jpg" alt="Aryan Yamini Senthil" className="w-full h-full object-cover" />
             </div>
             
