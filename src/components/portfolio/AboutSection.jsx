@@ -7,7 +7,7 @@ export default function AboutSection() {
     {
       icon: GraduationCap,
       title: 'Education',
-      description: 'Senior at University of Oklahoma',
+      description: 'University of Oklahoma',
       detail: 'Major in Engineering Physics • GPA: 3.4'
     },
     {
@@ -31,7 +31,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="about" className="py-24 bg-white">
+    <section id="about" className="py-24 bg-white dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -40,10 +40,10 @@ export default function AboutSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
             About Me
           </h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full"></div>
+          <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 mx-auto rounded-full"></div>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -54,14 +54,14 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-slate-50 rounded-2xl p-6 hover:bg-blue-50 transition-all duration-300 group"
+              className="bg-slate-50 dark:bg-slate-800 rounded-2xl p-6 hover:bg-blue-50 dark:hover:bg-blue-950/30 transition-all duration-300 group"
             >
-              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
-                <item.icon className="w-6 h-6 text-blue-600 group-hover:text-white transition-colors" />
+              <div className="w-12 h-12 bg-blue-100 dark:bg-blue-950 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
+                <item.icon className="w-6 h-6 text-blue-600 dark:text-blue-400 group-hover:text-white transition-colors" />
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-2">{item.title}</h3>
-              <p className="text-slate-600 text-sm mb-1">{item.description}</p>
-              <p className="text-slate-500 text-xs">{item.detail}</p>
+              <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2">{item.title}</h3>
+              <p className="text-slate-600 dark:text-slate-300 text-sm mb-1">{item.description}</p>
+              <p className="text-slate-500 dark:text-slate-400 text-xs">{item.detail}</p>
             </motion.div>
           ))}
         </div>
@@ -71,10 +71,10 @@ export default function AboutSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
-          className="mt-16 bg-gradient-to-br from-blue-50 to-slate-50 rounded-3xl p-8 md:p-12"
+          className="mt-16 bg-gradient-to-br from-blue-50 to-slate-50 dark:from-slate-800 dark:to-slate-700 rounded-3xl p-8 md:p-12"
         >
-          <h3 className="text-2xl font-bold text-slate-900 mb-6">Academic Background</h3>
-          <div className="space-y-4 text-slate-600 leading-relaxed">
+          <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Academic Background</h3>
+          <div className="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed">
             <p>
               Throughout my undergraduate journey at the University of Oklahoma, I've cultivated a deep passion for deep learning and autonomous systems.
               My coursework in Engineering Physics has provided me with a strong theoretical foundation, while research

@@ -8,6 +8,7 @@ import HeroSection from '../components/portfolio/HeroSection';
 import AboutSection from '../components/portfolio/AboutSection';
 import ExperienceSection from '../components/portfolio/ExperienceSection';
 import PublicationsSection from '../components/portfolio/PublicationsSection';
+import InvolvementSection from '../components/portfolio/InvolvementSection';
 import PortfolioCard from '../components/portfolio/PortfolioCard';
 import HTMLViewer from '../components/portfolio/HTMLViewer';
 import ContactSection from '../components/portfolio/ContactSection';
@@ -28,7 +29,7 @@ export default function Portfolio() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'experience', 'publications', 'research', 'problems', 'contact'];
+      const sections = ['home', 'about', 'experience', 'publications', 'research', 'problems', 'involvement', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -56,7 +57,7 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-slate-900 transition-colors duration-200">
       <Navigation activeSection={activeSection} />
 
       <HeroSection />
@@ -68,7 +69,7 @@ export default function Portfolio() {
       <PublicationsSection />
 
       {/* Research Section */}
-      <section id="research" className="py-24 bg-white">
+      <section id="research" className="py-24 bg-white dark:bg-slate-900">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -77,11 +78,11 @@ export default function Portfolio() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
               Research
             </h2>
-            <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full mb-6"></div>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 mx-auto rounded-full mb-6"></div>
+            <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
               Explore my research projects and contributions to the field
             </p>
           </motion.div>
@@ -99,8 +100,8 @@ export default function Portfolio() {
             </div>
           ) : (
             <div className="text-center py-12">
-              <p className="text-slate-500 mb-4">No research items yet.</p>
-              <p className="text-sm text-slate-400">
+              <p className="text-slate-500 dark:text-slate-400 mb-4">No research items yet.</p>
+              <p className="text-sm text-slate-400 dark:text-slate-500">
                 Add research items through the dashboard to showcase your work.
               </p>
             </div>
@@ -109,7 +110,7 @@ export default function Portfolio() {
       </section>
 
       {/* Projects Section */}
-      <section id="problems" className="py-24 bg-slate-50">
+      <section id="problems" className="py-24 bg-slate-50 dark:bg-slate-800">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -118,11 +119,11 @@ export default function Portfolio() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
               Projects
             </h2>
-            <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full mb-6"></div>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 mx-auto rounded-full mb-6"></div>
+            <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
               Innovative solutions to complex challenges
             </p>
           </motion.div>
@@ -140,14 +141,16 @@ export default function Portfolio() {
             </div>
           ) : (
             <div className="text-center py-12">
-              <p className="text-slate-500 mb-4">No problem solutions yet.</p>
-              <p className="text-sm text-slate-400">
+              <p className="text-slate-500 dark:text-slate-400 mb-4">No problem solutions yet.</p>
+              <p className="text-sm text-slate-400 dark:text-slate-500">
                 Add problem solutions through the dashboard to showcase your achievements.
               </p>
             </div>
           )}
         </div>
       </section>
+
+      <InvolvementSection />
 
       <ContactSection />
       

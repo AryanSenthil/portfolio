@@ -13,7 +13,7 @@ export default function PublicationsSection() {
   });
 
   return (
-    <section id="publications" className="py-24 bg-white">
+    <section id="publications" className="py-24 bg-white dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -22,11 +22,11 @@ export default function PublicationsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
             Publications
           </h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full mb-6"></div>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+          <div className="w-20 h-1 bg-blue-600 dark:bg-blue-400 mx-auto rounded-full mb-6"></div>
+          <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
             Research contributions and academic publications
           </p>
         </motion.div>
@@ -39,24 +39,24 @@ export default function PublicationsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-slate-50 rounded-2xl p-8 hover:bg-blue-50 transition-all border border-slate-200 hover:border-blue-200 group"
+              className="bg-slate-50 dark:bg-slate-800 rounded-2xl p-8 hover:bg-blue-50 dark:hover:bg-slate-750 transition-all border border-slate-200 dark:border-slate-700 hover:border-blue-200 dark:hover:border-blue-400 group"
             >
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-white rounded-xl shadow-sm group-hover:bg-blue-100 transition-colors">
-                  <FileCheck className="w-6 h-6 text-blue-600" />
+                <div className="p-3 bg-white dark:bg-slate-900 rounded-xl shadow-sm group-hover:bg-blue-100 dark:group-hover:bg-blue-900 transition-colors">
+                  <FileCheck className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                 </div>
-                
+
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                     {pub.title}
                   </h3>
-                  <p className="text-slate-600 mb-2">{pub.authors}</p>
-                  <p className="text-sm text-slate-500 mb-4">
-                    <span className="font-medium text-blue-600">{pub.venue}</span> • {pub.year}
+                  <p className="text-slate-600 dark:text-slate-300 mb-2">{pub.authors}</p>
+                  <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">
+                    <span className="font-medium text-blue-600 dark:text-blue-400">{pub.venue}</span> • {pub.year}
                   </p>
-                  
+
                   {pub.abstract && (
-                    <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-4">
                       {pub.abstract}
                     </p>
                   )}
@@ -67,7 +67,7 @@ export default function PublicationsSection() {
                         variant="outline"
                         size="sm"
                         asChild
-                        className="text-blue-600 border-blue-200 hover:bg-blue-50"
+                        className="text-blue-600 dark:text-blue-400 border-blue-200 dark:border-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900"
                       >
                         <a href={pub.url} target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="w-4 h-4 mr-2" />
@@ -80,7 +80,7 @@ export default function PublicationsSection() {
                         variant="outline"
                         size="sm"
                         asChild
-                        className="text-slate-600 hover:bg-slate-100"
+                        className="text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700"
                       >
                         <a href={pub.pdf_url} target="_blank" rel="noopener noreferrer">
                           <FileText className="w-4 h-4 mr-2" />
@@ -96,8 +96,8 @@ export default function PublicationsSection() {
 
           {publications.length === 0 && (
             <div className="text-center py-12">
-              <p className="text-slate-500 mb-4">No publications yet.</p>
-              <p className="text-sm text-slate-400">
+              <p className="text-slate-500 dark:text-slate-400 mb-4">No publications yet.</p>
+              <p className="text-sm text-slate-400 dark:text-slate-500">
                 Add publications through the dashboard.
               </p>
             </div>

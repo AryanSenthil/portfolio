@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from 'lucide-react';
+import ThemeToggle from '@/components/ui/ThemeToggle';
 
 export default function Navigation({ activeSection }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,16 +35,11 @@ export default function Navigation({ activeSection }) {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm' : 'bg-transparent'
+      isScrolled ? 'bg-white/95 dark:bg-slate-900/95 backdrop-blur-md shadow-sm dark:shadow-slate-800/20' : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <button 
-            onClick={() => scrollToSection('home')}
-            className="text-xl font-bold text-slate-900 hover:text-blue-600 transition-colors"
-          >
-            Portfolio
-          </button>
+          <ThemeToggle />
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-1">
@@ -53,8 +49,8 @@ export default function Navigation({ activeSection }) {
                 onClick={() => scrollToSection(item.id)}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                   activeSection === item.id
-                    ? 'text-blue-600 bg-blue-50'
-                    : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
+                    ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/50'
+                    : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800'
                 }`}
               >
                 {item.label}
@@ -66,10 +62,10 @@ export default function Navigation({ activeSection }) {
           <Button
             variant="ghost"
             size="icon"
-            className="lg:hidden"
+            className="lg:hidden dark:hover:bg-slate-800"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            {isMobileMenuOpen ? <X className="w-5 h-5 dark:text-slate-300" /> : <Menu className="w-5 h-5 dark:text-slate-300" />}
           </Button>
         </div>
 
@@ -82,8 +78,8 @@ export default function Navigation({ activeSection }) {
                 onClick={() => scrollToSection(item.id)}
                 className={`block w-full text-left px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                   activeSection === item.id
-                    ? 'text-blue-600 bg-blue-50'
-                    : 'text-slate-600 hover:bg-slate-50'
+                    ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/50'
+                    : 'text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800'
                 }`}
               >
                 {item.label}

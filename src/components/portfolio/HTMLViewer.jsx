@@ -29,29 +29,29 @@ export default function HTMLViewer({ item, onClose }) {
           exit={{ scale: 0.95, opacity: 0, y: 20 }}
           transition={{ type: "spring", duration: 0.5 }}
           onClick={(e) => e.stopPropagation()}
-          className="bg-white rounded-3xl shadow-2xl w-full max-w-[95vw] max-h-[95vh] overflow-hidden flex flex-col"
+          className="bg-white dark:bg-slate-900 rounded-3xl shadow-2xl w-full max-w-[95vw] max-h-[95vh] overflow-hidden flex flex-col"
         >
           {/* Header */}
-          <div className="flex items-center justify-between p-6 border-b border-slate-200 bg-slate-50">
+          <div className="flex items-center justify-between p-6 border-b border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800">
             <div>
-              <h2 className="text-2xl font-bold text-slate-900">{item.title}</h2>
-              <p className="text-sm text-slate-500 mt-1">{item.description}</p>
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white">{item.title}</h2>
+              <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">{item.description}</p>
             </div>
             <Button
               variant="ghost"
               size="icon"
               onClick={onClose}
-              className="rounded-full hover:bg-slate-200"
+              className="rounded-full hover:bg-slate-200 dark:hover:bg-slate-700"
             >
-              <X className="w-5 h-5" />
+              <X className="w-5 h-5 text-slate-700 dark:text-white" />
             </Button>
           </div>
 
           {/* Content */}
-          <div className="flex-1 overflow-y-auto p-6">
+          <div className="flex-1 overflow-y-auto p-6 bg-white dark:bg-slate-900">
             {item.content_html ? (
-              <div 
-                className="prose prose-lg prose-slate max-w-none prose-headings:text-slate-900 prose-p:text-slate-600 prose-a:text-blue-600 prose-strong:text-slate-900 prose-ul:text-slate-600 prose-ol:text-slate-600"
+              <div
+                className="prose prose-lg prose-slate dark:prose-invert max-w-none prose-headings:text-slate-900 dark:prose-headings:text-white prose-p:text-slate-600 dark:prose-p:text-slate-300 prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-strong:text-slate-900 dark:prose-strong:text-white prose-ul:text-slate-600 dark:prose-ul:text-slate-300 prose-ol:text-slate-600 dark:prose-ol:text-slate-300"
                 dangerouslySetInnerHTML={{ __html: item.content_html }}
               />
             ) : item.html_file_url ? (
@@ -62,8 +62,8 @@ export default function HTMLViewer({ item, onClose }) {
               />
             ) : (
               <div className="text-center py-12">
-                <p className="text-slate-500">No content available for this item.</p>
-                <p className="text-sm text-slate-400 mt-2">
+                <p className="text-slate-500 dark:text-slate-400">No content available for this item.</p>
+                <p className="text-sm text-slate-400 dark:text-slate-500 mt-2">
                   Add HTML content or upload an HTML file through the dashboard.
                 </p>
               </div>
