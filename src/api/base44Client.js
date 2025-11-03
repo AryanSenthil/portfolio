@@ -6,8 +6,8 @@ const mockPortfolioItems = [
     title: 'Self Powered Onion-Peel Pressure Sensor',
     type: 'research',
     description: 'Deep Learning-Based Load Characterization and Deformation Prediction for Bio-Sourced Onion Peel Piezoelectric Sensors',
-    image_url: '/projects/onion_sensor/images/Onion Ink/sensor.png',
-    html_file_url: '/projects/onion_sensor/src/onion_sensor.html',
+    image_url: '/portfolio/projects/onion_sensor/images/Onion Ink/sensor.png',
+    html_file_url: '/portfolio/projects/onion_sensor/src/onion_sensor.html',
     order: 1
   },
   {
@@ -15,8 +15,8 @@ const mockPortfolioItems = [
     title: 'AI-Driven Structural Health Monitoring',
     type: 'research',
     description: 'Damage Detection in Carbon Fiber Composities using Deep Learning enabled Flexoelectric Sensors',
-    image_url: '/projects/Damage/images/Slide1.png',
-    html_file_url: '/projects/Damage/damage.html',
+    image_url: '/portfolio/projects/Damage/images/Slide1.png',
+    html_file_url: '/portfolio/projects/Damage/damage.html',
     order: 2
   },
   {
@@ -24,7 +24,7 @@ const mockPortfolioItems = [
     title: 'Contact Detection Bot',
     type: 'problem',
     description: 'Automated Contact Detection for Instron Compression Testing of Piezoelectric Pressure Sensors',
-    html_file_url: '/projects/Contact-Detection/instron_extension.html',
+    html_file_url: '/portfolio/projects/Contact-Detection/instron_extension.html',
     order: 1
   },
   {
@@ -32,7 +32,7 @@ const mockPortfolioItems = [
     title: 'Laser Coordinate Tracker',
     type: 'problem',
     description: 'Computer Vision-Based Laser Position Measurement in Torsion Balance Experiments',
-    html_file_url: '/projects/Cavendish/cavendish.html',
+    html_file_url: '/portfolio/projects/Cavendish/cavendish.html',
     order: 2
   }
 ];

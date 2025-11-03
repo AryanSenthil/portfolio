@@ -39,3 +39,7 @@ lerna-debug.log*
 # OS
 .DS_Store
 Thumbs.db
+
+# Embedded git repositories in projects
+public/projects/**/.git
+public/projects/*/.git

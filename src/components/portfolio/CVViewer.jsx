@@ -13,7 +13,7 @@ export default function CVViewer({ onClose }) {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/cv.pdf';
+    link.href = '/portfolio/cv.pdf';
     link.download = 'Aryan_Yamini_Senthil_CV.pdf';
     link.click();
   };
@@ -67,7 +67,7 @@ export default function CVViewer({ onClose }) {
           {/* CV Content - HTML Viewer */}
           <div className="flex-1 overflow-hidden bg-slate-100 dark:bg-slate-950">
             <iframe
-              src="/cv/cv.html"
+              src="/portfolio/cv/cv.html"
               title="Curriculum Vitae"
               className="w-full h-full border-0"
               style={{

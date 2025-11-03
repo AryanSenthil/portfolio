@@ -13,7 +13,7 @@ export default function HeroSection() {
           {/* Left: Portrait */}
           <div className="flex flex-col items-center md:items-end gap-6">
             <div className="bg-slate-100 dark:bg-slate-700 rounded-3xl overflow-hidden w-[36rem] h-[42rem] flex items-center justify-center shadow-2xl dark:shadow-slate-900/50">
-              <img src="/profile.jpg" alt="Aryan Yamini Senthil" className="w-full h-full object-cover" />
+              <img src="/portfolio/profile.jpg" alt="Aryan Yamini Senthil" className="w-full h-full object-cover" />
             </div>
             
             {/* Social Icons */}
@@ -96,7 +96,7 @@ export default function HeroSection() {
                 className="px-6 py-6 rounded-xl border-2 border-slate-300 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-700 dark:bg-slate-800 dark:text-slate-200 transition-all shadow-lg hover:shadow-xl"
                 onClick={() => {
                   const link = document.createElement('a');
-                  link.href = '/cv.pdf';
+                  link.href = '/portfolio/cv.pdf';
                   link.download = 'Aryan_Yamini_Senthil_CV.pdf';
                   link.click();
                 }}
