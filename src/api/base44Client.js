@@ -43,7 +43,7 @@ const mockExperiences = [
       'Published paper on flexoelectric sensors for damage detection',
       'Designed and 3D printed ultrasensitive smart sensors',
       'Developed self-powered AI-driven sensing technologies',
-      'Built novel deep learning models that function as intelligent pressure sensors',
+      'Built novel deep learning models that allow intelligent pressure sensors',
       'Created neural network models for composite damage localization'
     ],
     order: 1
