@@ -26,12 +26,15 @@ export default function InvolvementSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="mb-16"
+          className="mb-16 text-center"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-white">
             Community Involvement
           </h2>
-          <div className="w-20 h-1 bg-blue-500 dark:bg-blue-400 rounded-full"></div>
+          <div className="w-20 h-1 bg-blue-500 dark:bg-blue-400 rounded-full mx-auto mb-6"></div>
+          <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
+            Leadership and service in student organizations and community initiatives
+          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">

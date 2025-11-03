@@ -26,12 +26,15 @@ export default function ExperienceSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="mb-16"
+          className="mb-16 text-center"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 dark:text-white">
             Experience
           </h2>
-          <div className="w-20 h-1 bg-blue-500 dark:bg-blue-400 rounded-full"></div>
+          <div className="w-20 h-1 bg-blue-500 dark:bg-blue-400 rounded-full mx-auto mb-6"></div>
+          <p className="text-lg text-slate-400 dark:text-slate-300 max-w-2xl mx-auto">
+            Professional journey spanning research, development, and leadership
+          </p>
         </motion.div>
 
         <div className="relative">
