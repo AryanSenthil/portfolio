@@ -28,8 +28,16 @@ export default function ExperienceSection() {
         </motion.div>
 
         <div className="relative">
-          {/* Timeline line */}
-          <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-slate-700 hidden md:block"></div>
+          {/* Timeline line - connects between circle centers only */}
+          {experiences.length > 1 && (
+            <div
+              className="absolute left-6 w-0.5 bg-slate-700 hidden md:block"
+              style={{
+                top: 'calc(3rem + 1.5rem)',
+                bottom: `calc(3rem + 1.5rem)`
+              }}
+            ></div>
+          )}
 
           <div className="space-y-12">
             {experiences.map((exp, index) => (
@@ -41,8 +49,8 @@ export default function ExperienceSection() {
                 viewport={{ once: true }}
                 className="relative"
               >
-                {/* Timeline dot - centered vertically with content */}
-                <div className="absolute left-0 top-8 w-12 h-12 bg-blue-500 rounded-full items-center justify-center hidden md:flex">
+                {/* Timeline dot - centered with the content box */}
+                <div className="absolute left-0 top-6 w-12 h-12 bg-blue-500 rounded-full items-center justify-center hidden md:flex">
                   <div className="w-3 h-3 bg-white rounded-full"></div>
                 </div>
 

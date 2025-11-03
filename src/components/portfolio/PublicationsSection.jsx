@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useQuery } from '@tanstack/react-query';
 import { base44 } from '@/api/base44Client';
-import { FileText, ExternalLink } from 'lucide-react';
+import { FileText, ExternalLink, FileCheck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function PublicationsSection() {
@@ -43,7 +43,7 @@ export default function PublicationsSection() {
             >
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-white rounded-xl shadow-sm group-hover:bg-blue-100 transition-colors">
-                  <FileText className="w-6 h-6 text-blue-600" />
+                  <FileCheck className="w-6 h-6 text-blue-600" />
                 </div>
                 
                 <div className="flex-1">

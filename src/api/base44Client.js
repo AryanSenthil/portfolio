@@ -3,30 +3,37 @@
 const mockPortfolioItems = [
   {
     id: '1',
-    title: 'Sample Research Project',
+    title: 'Self Powered Onion-Peel Pressure Sensor',
     type: 'research',
-    description: 'This is a sample research project demonstrating portfolio functionality.',
-    image_url: 'https://via.placeholder.com/600x400',
-    content: '<h1>Research Project</h1><p>This is sample content for the research project.</p>',
+    description: 'Deep Learning-Based Load Characterization and Deformation Prediction for Bio-Sourced Onion Peel Piezoelectric Sensors',
+    image_url: '/projects/onion_sensor/images/Onion Ink/sensor.png',
+    html_file_url: '/projects/onion_sensor/src/onion_sensor.html',
     order: 1
   },
   {
     id: '2',
-    title: 'Another Research Study',
+    title: 'AI-Driven Structural Health Monitoring',
     type: 'research',
-    description: 'Another example of research work.',
-    image_url: 'https://via.placeholder.com/600x400',
-    content: '<h1>Research Study</h1><p>This is sample content for the research study.</p>',
+    description: 'Damage Detection in Carbon Fiber Composities using Deep Learning enabled Flexoelectric Sensors',
+    image_url: '/projects/Damage/images/Slide1.png',
+    html_file_url: '/projects/Damage/damage.html',
     order: 2
   },
   {
     id: '3',
-    title: 'Problem: Data Processing Challenge',
+    title: 'Contact Detection Bot',
     type: 'problem',
-    description: 'Solved a complex data processing challenge.',
-    image_url: 'https://via.placeholder.com/600x400',
-    content: '<h1>Data Processing Solution</h1><p>Details about the problem and solution.</p>',
+    description: 'Automated Contact Detection for Instron Compression Testing of Piezoelectric Pressure Sensors',
+    html_file_url: '/projects/Contact-Detection/instron_extension.html',
     order: 1
+  },
+  {
+    id: '4',
+    title: 'Laser Coordinate Tracker',
+    type: 'problem',
+    description: 'Computer Vision-Based Laser Position Measurement in Torsion Balance Experiments',
+    html_file_url: '/projects/Cavendish/cavendish.html',
+    order: 2
   }
 ];
 
@@ -116,7 +123,7 @@ const mockPublications = [
     authors: 'Kuntal Maity, Mrinal Saha, Aryan Senthil, Anirban Mondal',
     venue: '39th Annual Technical Conference of the American Society for Composites (ASC) [In Press]',
     year: 2024,
-    url: 'https://sites.google.com/view/2024asc-sandiego/home',
+    url: 'https://composites.uw.edu/ASC/?q=2024',
     order: 1
   }
 ];

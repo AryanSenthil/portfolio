@@ -1,8 +1,11 @@
-import React from 'react';
-import { User, Download, Mail, Linkedin, Github, Twitter, Eye } from 'lucide-react';
+import React, { useState } from 'react';
+import { User, Download, Mail, Linkedin, Github, Eye } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import CVViewer from './CVViewer';
 
 export default function HeroSection() {
+  const [showCV, setShowCV] = useState(false);
+
   return (
     <section id="home" className="min-h-screen flex items-center bg-gradient-to-br from-slate-50 to-blue-50/30 pt-20">
       <div className="max-w-7xl mx-auto px-6 py-20">
@@ -21,15 +24,6 @@ export default function HeroSection() {
                 aria-label="Email"
               >
                 <Mail className="w-5 h-5 text-white" />
-              </a>
-              <a
-                href="https://x.com/AryanSenthil"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 bg-slate-700 hover:bg-blue-600 rounded-lg transition-all"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-5 h-5 text-white" />
               </a>
               <a
                 href="https://www.linkedin.com/in/aryan-yamini-senthil-18125b243"
@@ -59,7 +53,7 @@ export default function HeroSection() {
                 Aryan Yamini Senthil
               </h1>
               <p className="text-2xl text-blue-600 font-medium">
-                Senior Undergraduate Researcher and PhD Candidate
+                Undergraduate Researcher and PhD Candidate
               </p>
             </div>
             
@@ -79,9 +73,7 @@ export default function HeroSection() {
             <div className="flex gap-4 pt-4">
               <Button
                 className="px-8 py-6 bg-blue-600 text-white rounded-xl font-medium hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl"
-                onClick={() => {
-                  window.open('/cv.pdf', '_blank');
-                }}
+                onClick={() => setShowCV(true)}
               >
                 <Eye className="w-5 h-5 mr-2" />
                 View CV
@@ -112,6 +104,13 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
+
+      {/* CV Viewer Modal */}
+      {showCV && (
+        <CVViewer
+          onClose={() => setShowCV(false)}
+        />
+      )}
     </section>
   );
 }

@@ -28,7 +28,7 @@ export default function Portfolio() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'experience', 'research', 'publications', 'problems', 'contact'];
+      const sections = ['home', 'about', 'experience', 'publications', 'research', 'problems', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -65,6 +65,8 @@ export default function Portfolio() {
 
       <ExperienceSection />
 
+      <PublicationsSection />
+
       {/* Research Section */}
       <section id="research" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
@@ -85,7 +87,7 @@ export default function Portfolio() {
           </motion.div>
 
           {researchItems.length > 0 ? (
-            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-1 gap-12 max-w-[1400px] mx-auto">
               {researchItems.map((item, index) => (
                 <PortfolioCard
                   key={item.id}
@@ -106,9 +108,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <PublicationsSection />
-
-      {/* Problems Solved Section */}
+      {/* Projects Section */}
       <section id="problems" className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div
@@ -119,7 +119,7 @@ export default function Portfolio() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-              Problems Solved
+              Projects
             </h2>
             <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full mb-6"></div>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
@@ -128,7 +128,7 @@ export default function Portfolio() {
           </motion.div>
 
           {problemItems.length > 0 ? (
-            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-1 gap-12 max-w-[1400px] mx-auto">
               {problemItems.map((item, index) => (
                 <PortfolioCard
                   key={item.id}

@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <h3 className="text-xl font-bold mb-2">Aryan Yamini Senthil</h3>
             <p className="text-slate-400 text-sm">
-              Senior Undergraduate Researcher | PhD Candidate | Engineering Physics
+              Undergraduate Researcher | PhD Candidate | Engineering Physics
             </p>
           </div>
 

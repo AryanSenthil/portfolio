@@ -77,13 +77,13 @@ export default function AboutSection() {
           <div className="space-y-4 text-slate-600 leading-relaxed">
             <p>
               Throughout my undergraduate journey at the University of Oklahoma, I've cultivated a deep passion for deep learning and autonomous systems.
-              My coursework in Engineering Physics (GPA: 3.4) has provided me with a strong theoretical foundation, while research
+              My coursework in Engineering Physics has provided me with a strong theoretical foundation, while research
               experiences have honed my practical skills in applied machine learning, sensor design, and algorithm development.
             </p>
             <p>
-              As a Senior Undergraduate Researcher working under the guidance of Dr. Mrinal Saha and Postdoctoral Mentor Dr. Kuntal Maity,
+              As an Undergraduate Researcher working under the guidance of Dr. Mrinal Saha and Postdoctoral Mentor Dr. Kuntal Maity,
               I've conducted experimental research on smart materials and developed deep learning algorithms for autonomous sensing technologies.
-              My work on flexoelectric sensors and transformer-based damage detection has contributed to cutting-edge research in structural health monitoring,
+              My work on flexoelectric sensors and deep learning-based damage detection has contributed to cutting-edge research in structural health monitoring,
               resulting in a publication at the 39th Annual Technical Conference of the American Society for Composites.
             </p>
             <p>

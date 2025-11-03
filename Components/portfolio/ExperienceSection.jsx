@@ -31,7 +31,7 @@ export default function ExperienceSection() {
           {/* Timeline line */}
           <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-slate-700 hidden md:block"></div>
 
-          <div className="space-y-12">
+          <div className="space-y-16">
             {experiences.map((exp, index) => (
               <motion.div
                 key={exp.id}
@@ -46,38 +46,42 @@ export default function ExperienceSection() {
                   <div className="w-3 h-3 bg-white rounded-full"></div>
                 </div>
 
+                {index === experiences.length - 1 && (
+                  <div className="absolute left-6 top-[5rem] bottom-0 w-0.5 bg-slate-900 hidden md:block z-10"></div>
+                )}
+
                 {/* Content */}
-                <div className="md:ml-20 bg-slate-800 rounded-2xl p-8 hover:bg-slate-750 transition-all border border-slate-700">
-                  <div className="flex items-start gap-4 mb-4">
+                <div className="md:ml-20 bg-slate-800 rounded-2xl p-10 hover:bg-slate-750 transition-all border border-slate-700">
+                  <div className="flex items-start gap-6 mb-6">
                     {exp.company_logo ? (
-                      <img 
-                        src={exp.company_logo} 
+                      <img
+                        src={exp.company_logo}
                         alt={exp.company}
-                        className="w-12 h-12 rounded-lg object-contain bg-white p-2"
+                        className="w-16 h-16 rounded-lg object-contain bg-white p-2"
                       />
                     ) : (
-                      <div className="w-12 h-12 bg-slate-700 rounded-lg flex items-center justify-center">
-                        <Briefcase className="w-6 h-6 text-slate-400" />
+                      <div className="w-16 h-16 bg-slate-700 rounded-lg flex items-center justify-center">
+                        <Briefcase className="w-8 h-8 text-slate-400" />
                       </div>
                     )}
                     
                     <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-white mb-1">
+                      <h3 className="text-2xl font-bold text-white mb-2">
                         {exp.position}
                       </h3>
-                      <p className="text-lg text-blue-400 font-medium mb-2">
+                      <p className="text-xl text-blue-400 font-medium mb-2">
                         {exp.company}
                       </p>
-                      <p className="text-sm text-slate-400">
+                      <p className="text-base text-slate-400">
                         {exp.start_date} – {exp.end_date} {exp.location && `· ${exp.location}`}
                       </p>
                     </div>
                   </div>
 
                   {exp.description && exp.description.length > 0 && (
-                    <ul className="space-y-2 mt-4">
+                    <ul className="space-y-3 mt-6">
                       {exp.description.map((item, idx) => (
-                        <li key={idx} className="text-slate-300 flex items-start gap-3">
+                        <li key={idx} className="text-slate-300 text-base flex items-start gap-3 leading-relaxed">
                           <span className="text-blue-400 mt-1.5">•</span>
                           <span>{item}</span>
                         </li>

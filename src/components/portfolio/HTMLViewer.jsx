@@ -29,7 +29,7 @@ export default function HTMLViewer({ item, onClose }) {
           exit={{ scale: 0.95, opacity: 0, y: 20 }}
           transition={{ type: "spring", duration: 0.5 }}
           onClick={(e) => e.stopPropagation()}
-          className="bg-white rounded-3xl shadow-2xl w-full max-w-6xl max-h-[90vh] overflow-hidden flex flex-col"
+          className="bg-white rounded-3xl shadow-2xl w-full max-w-[95vw] max-h-[95vh] overflow-hidden flex flex-col"
         >
           {/* Header */}
           <div className="flex items-center justify-between p-6 border-b border-slate-200 bg-slate-50">
@@ -48,7 +48,7 @@ export default function HTMLViewer({ item, onClose }) {
           </div>
 
           {/* Content */}
-          <div className="flex-1 overflow-y-auto p-8">
+          <div className="flex-1 overflow-y-auto p-6">
             {item.content_html ? (
               <div 
                 className="prose prose-lg prose-slate max-w-none prose-headings:text-slate-900 prose-p:text-slate-600 prose-a:text-blue-600 prose-strong:text-slate-900 prose-ul:text-slate-600 prose-ol:text-slate-600"
@@ -57,7 +57,7 @@ export default function HTMLViewer({ item, onClose }) {
             ) : item.html_file_url ? (
               <iframe
                 src={item.html_file_url}
-                className="w-full h-full min-h-[600px] border-0"
+                className="w-full h-full min-h-[80vh] border-0"
                 title={item.title}
               />
             ) : (
@@ -68,13 +68,6 @@ export default function HTMLViewer({ item, onClose }) {
                 </p>
               </div>
             )}
-          </div>
-
-          {/* Footer hint */}
-          <div className="p-4 bg-slate-50 text-center border-t border-slate-200">
-            <p className="text-xs text-slate-500">
-              Press ESC or click outside to close
-            </p>
           </div>
         </motion.div>
       </motion.div>

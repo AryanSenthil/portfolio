@@ -26,9 +26,9 @@ export default function Navigation({ activeSection }) {
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
     { id: 'experience', label: 'Experience' },
-    { id: 'research', label: 'Research' },
     { id: 'publications', label: 'Publications' },
-    { id: 'problems', label: 'Problems Solved' },
+    { id: 'research', label: 'Research' },
+    { id: 'problems', label: 'Projects' },
     { id: 'contact', label: 'Contact' }
   ];
 
