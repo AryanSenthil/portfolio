@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Linkedin, Send, CheckCircle } from 'lucide-react';
+import { Mail, Linkedin, Send, CheckCircle, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -22,7 +22,7 @@ export default function ContactSection() {
 
     try {
       await base44.integrations.Core.SendEmail({
-        to: 'your.email@example.com', // Replace with your email
+        to: 'aryanyaminisenthil@gmail.com',
         subject: `Portfolio Contact: ${formData.subject}`,
         body: `
           Name: ${formData.name}
@@ -84,7 +84,7 @@ export default function ContactSection() {
 
             <div className="space-y-4">
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:aryanyaminisenthil@gmail.com"
                 className="flex items-center gap-4 p-4 bg-white rounded-xl hover:bg-blue-50 transition-all group border border-slate-200 hover:border-blue-200"
               >
                 <div className="p-3 bg-blue-50 rounded-lg group-hover:bg-blue-100 transition-colors">
@@ -92,12 +92,25 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="font-medium text-slate-900">Email</p>
-                  <p className="text-sm text-slate-600">your.email@example.com</p>
+                  <p className="text-sm text-slate-600">aryanyaminisenthil@gmail.com</p>
                 </div>
               </a>
 
               <a
-                href="https://linkedin.com/in/yourprofile"
+                href="tel:+14054147622"
+                className="flex items-center gap-4 p-4 bg-white rounded-xl hover:bg-blue-50 transition-all group border border-slate-200 hover:border-blue-200"
+              >
+                <div className="p-3 bg-blue-50 rounded-lg group-hover:bg-blue-100 transition-colors">
+                  <Phone className="w-6 h-6 text-blue-600" />
+                </div>
+                <div>
+                  <p className="font-medium text-slate-900">Phone</p>
+                  <p className="text-sm text-slate-600">(405) 414-7622</p>
+                </div>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/aryan-yamini-senthil-18125b243"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 bg-white rounded-xl hover:bg-blue-50 transition-all group border border-slate-200 hover:border-blue-200"

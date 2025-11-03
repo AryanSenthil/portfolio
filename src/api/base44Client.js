@@ -33,48 +33,91 @@ const mockPortfolioItems = [
 const mockExperiences = [
   {
     id: '1',
-    title: 'Senior Software Engineer',
-    company: 'Tech Company',
-    location: 'Remote',
-    startDate: '2022-01-01',
-    endDate: null,
+    position: 'Undergraduate Research Assistant',
+    company: 'University of Oklahoma',
+    location: 'Norman, OK',
+    start_date: 'May 2022',
+    end_date: 'Present',
     current: true,
-    description: 'Leading development of innovative software solutions.',
+    description: [
+      'Published paper on flexoelectric sensors for damage detection',
+      'Designed and 3D printed ultrasensitive smart sensors',
+      'Developed self-powered AI-driven sensing technologies',
+      'Built novel deep learning models that function as intelligent pressure sensors',
+      'Created neural network models for composite damage localization'
+    ],
     order: 1
   },
   {
     id: '2',
-    title: 'Software Engineer',
-    company: 'Previous Company',
-    location: 'San Francisco, CA',
-    startDate: '2020-01-01',
-    endDate: '2021-12-31',
+    position: 'CEO and Cofounder',
+    company: 'Dirac Technologies',
+    location: 'Norman, OK',
+    start_date: 'May 2024',
+    end_date: 'Jun 2025',
     current: false,
-    description: 'Developed web applications and APIs.',
+    description: [
+      'Secured funding for autonomous robotic arms development',
+      'Built imitation learning framework for manipulation tasks',
+      'Integrated object detection and teleoperation systems',
+      'Led 5-member team across hardware and AI'
+    ],
     order: 2
+  },
+  {
+    id: '3',
+    position: 'Math Tutor',
+    company: 'Math Center - University of Oklahoma',
+    location: 'Norman, OK',
+    start_date: 'Oct 2022',
+    end_date: 'May 2023',
+    current: false,
+    description: [
+      'Tutored Calculus, Differential Equations, and Linear Algebra',
+      'Guided students through exams and homework'
+    ],
+    order: 3
+  },
+  {
+    id: '4',
+    position: 'Community Service Chair',
+    company: 'Pi Kappa Phi Fraternity - University of Oklahoma',
+    location: 'Norman, OK',
+    start_date: 'Aug 2022',
+    end_date: 'Dec 2023',
+    current: false,
+    description: [
+      'Organized national philanthropy initiative for people with disabilities',
+      'Coordinated fundraising and volunteer events',
+      'Led participation in university\'s largest service projects'
+    ],
+    order: 4
+  },
+  {
+    id: '5',
+    position: 'Executive Board Member',
+    company: 'OU Cousins - University of Oklahoma',
+    location: 'Norman, OK',
+    start_date: 'Sep 2020',
+    end_date: 'May 2021',
+    current: false,
+    description: [
+      'Facilitated intercultural programs for international students',
+      'Promoted diversity and inclusion across campus'
+    ],
+    order: 5
   }
 ];
 
 const mockPublications = [
   {
     id: '1',
-    title: 'Sample Publication Title',
-    authors: 'Author Name, Co-Author Name',
-    venue: 'International Conference on Example Topics',
-    year: 2023,
-    url: 'https://example.com',
-    abstract: 'This is a sample abstract for a publication.',
+    title: 'Design of Flexible and Ultrasensitive 3D Printed Flexoelectric Sensor for Self-Powered Damage Detection of Composite Structures',
+    authors: 'Kuntal Maity, Mrinal Saha, Aryan Senthil, Anirban Mondal',
+    venue: '39th Annual Technical Conference of the American Society for Composites (ASC) [In Press]',
+    year: 2024,
+    url: 'https://sites.google.com/view/2024asc-sandiego/home',
     order: 1
-  },
-  {
-    id: '2',
-    title: 'Another Research Paper',
-    authors: 'Author Name, et al.',
-    venue: 'Journal of Example Research',
-    year: 2022,
-    url: 'https://example.com',
-    abstract: 'This is another sample abstract.',
-    order: 2
   }
 ];
 

@@ -7,14 +7,14 @@ export default function AboutSection() {
     {
       icon: GraduationCap,
       title: 'Education',
-      description: 'Senior at [University Name]',
-      detail: 'Major in [Your Major] • GPA: X.XX'
+      description: 'Senior at University of Oklahoma',
+      detail: 'Major in Engineering Physics • GPA: 3.4'
     },
     {
       icon: Award,
       title: 'Achievements',
       description: 'Academic excellence & recognition',
-      detail: 'Dean\'s List • Research Awards'
+      detail: 'Dean\'s List • Published Researcher'
     },
     {
       icon: BookOpen,
@@ -26,7 +26,7 @@ export default function AboutSection() {
       icon: Target,
       title: 'Goals',
       description: 'Pursuing PhD opportunities',
-      detail: 'Focus on [Research Area]'
+      detail: 'Focus on Deep Learning & Autonomous Systems'
     }
   ];
 
@@ -76,19 +76,20 @@ export default function AboutSection() {
           <h3 className="text-2xl font-bold text-slate-900 mb-6">Academic Background</h3>
           <div className="space-y-4 text-slate-600 leading-relaxed">
             <p>
-              Throughout my undergraduate journey, I've cultivated a deep passion for [Your Field]. 
-              My coursework has provided me with a strong theoretical foundation, while research 
-              experiences have honed my practical skills in [Specific Skills/Methods].
+              Throughout my undergraduate journey at the University of Oklahoma, I've cultivated a deep passion for deep learning and autonomous systems.
+              My coursework in Engineering Physics (GPA: 3.4) has provided me with a strong theoretical foundation, while research
+              experiences have honed my practical skills in applied machine learning, sensor design, and algorithm development.
             </p>
             <p>
-              I've had the privilege of working with [Professors/Labs/Organizations], where I've 
-              contributed to [Brief Description of Work]. These experiences have reinforced my 
-              commitment to pursuing advanced research and making meaningful contributions to the field.
+              As a Senior Undergraduate Researcher working under the guidance of Dr. Mrinal Saha and Postdoctoral Mentor Dr. Kuntal Maity,
+              I've conducted experimental research on smart materials and developed deep learning algorithms for autonomous sensing technologies.
+              My work on flexoelectric sensors and transformer-based damage detection has contributed to cutting-edge research in structural health monitoring,
+              resulting in a publication at the 39th Annual Technical Conference of the American Society for Composites.
             </p>
             <p>
-              As I prepare to graduate, I'm eager to continue this journey at the doctoral level, 
-              where I can delve deeper into [Specific Research Interests] and collaborate with 
-              leading researchers in the field.
+              Beyond research, I founded Dirac Technologies where I led the development of autonomous robotic arms using imitation learning frameworks,
+              and have been recognized on the Dean's List for academic excellence. As I prepare to graduate in December 2025, I'm eager to continue this journey at the doctoral level,
+              where I can delve deeper into deep learning, reinforcement learning, and multimodal AI and collaborate with leading researchers in the field.
             </p>
           </div>
         </motion.div>

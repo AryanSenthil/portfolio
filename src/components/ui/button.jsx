@@ -6,6 +6,7 @@ export function Button({
   variant = 'default',
   size = 'default',
   onClick,
+  asChild = false,
   ...props
 }) {
   const baseStyles = 'inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 disabled:pointer-events-none disabled:opacity-50';
@@ -18,12 +19,22 @@ export function Button({
 
   const sizes = {
     default: 'h-10 px-4 py-2',
+    sm: 'h-9 px-3 py-2 text-sm',
     icon: 'h-10 w-10'
   };
 
+  const combinedClassName = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`;
+
+  if (asChild) {
+    return React.cloneElement(children, {
+      className: combinedClassName,
+      ...props
+    });
+  }
+
   return (
     <button
-      className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`}
+      className={combinedClassName}
       onClick={onClick}
       {...props}
     >

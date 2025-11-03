@@ -7,22 +7,22 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
-            <h3 className="text-xl font-bold mb-2">Your Name</h3>
+            <h3 className="text-xl font-bold mb-2">Aryan Yamini Senthil</h3>
             <p className="text-slate-400 text-sm">
-              PhD Candidate | Researcher | [Your Field]
+              Senior Undergraduate Researcher | PhD Candidate | Engineering Physics
             </p>
           </div>
 
           <div className="flex items-center gap-4">
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:aryanyaminisenthil@gmail.com"
               className="p-3 bg-slate-800 rounded-lg hover:bg-blue-600 transition-all"
               aria-label="Email"
             >
               <Mail className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://www.linkedin.com/in/aryan-yamini-senthil-18125b243"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-slate-800 rounded-lg hover:bg-blue-600 transition-all"
@@ -31,7 +31,7 @@ export default function Footer() {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/AryanSenthil"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-slate-800 rounded-lg hover:bg-blue-600 transition-all"
@@ -43,7 +43,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-slate-800 text-center text-slate-400 text-sm">
-          <p>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Aryan Yamini Senthil. All rights reserved.</p>
         </div>
       </div>
     </footer>
