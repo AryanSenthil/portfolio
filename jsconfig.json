@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "checkJs": false
+  },
+  "include": ["src", "Components", "Pages"],
+  "exclude": ["public", "dist", "node_modules"]
+}

@@ -32,16 +32,16 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="about" className="py-24 bg-white dark:bg-slate-900">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="about" className="py-16 sm:py-24 bg-white dark:bg-slate-900">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: easings.emphasis }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
             About Me
           </h2>
           <motion.div
@@ -53,7 +53,7 @@ export default function AboutSection() {
           ></motion.div>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {highlights.map((item, index) => (
             <motion.div
               key={index}
@@ -89,14 +89,14 @@ export default function AboutSection() {
           transition={{ duration: 0.6, delay: 0.4, ease: easings.emphasis }}
           viewport={{ once: true }}
           whileHover={{ scale: 1.005 }}
-          className="mt-16 bg-gradient-to-br from-blue-50/80 to-slate-50/80 dark:from-slate-800/80 dark:to-slate-700/80 backdrop-blur-glass rounded-3xl p-8 md:p-12 border border-slate-200/50 dark:border-slate-700/50 shadow-float dark:shadow-glass relative overflow-hidden group"
+          className="mt-12 sm:mt-16 bg-gradient-to-br from-blue-50/80 to-slate-50/80 dark:from-slate-800/80 dark:to-slate-700/80 backdrop-blur-glass rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 border border-slate-200/50 dark:border-slate-700/50 shadow-float dark:shadow-glass relative overflow-hidden group"
         >
           {/* Subtle animated gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-blue-100/20 via-transparent to-slate-100/20 dark:from-blue-900/10 dark:via-transparent dark:to-slate-800/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
 
           <div className="relative z-10">
-            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Background</h3>
-            <div className="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed">
+            <h3 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-4 sm:mb-6">Background</h3>
+            <div className="space-y-3 sm:space-y-4 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
               <motion.p
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}

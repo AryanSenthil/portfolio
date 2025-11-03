@@ -20,8 +20,8 @@ export default function ExperienceSection() {
   });
 
   return (
-    <section id="experience" className="py-24 bg-slate-900 dark:bg-slate-950 text-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="experience" className="py-16 sm:py-24 bg-slate-900 dark:bg-slate-950 text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -29,7 +29,7 @@ export default function ExperienceSection() {
           viewport={{ once: true }}
           className="mb-16 text-center"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 dark:text-white">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 dark:text-white">
             Experience
           </h2>
           <motion.div

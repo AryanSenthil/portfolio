@@ -72,8 +72,8 @@ export default function Portfolio() {
       <PublicationsSection />
 
       {/* Research Section */}
-      <section id="research" className="py-24 bg-white dark:bg-slate-900">
-        <div className="max-w-7xl mx-auto px-6">
+      <section id="research" className="py-16 sm:py-24 bg-white dark:bg-slate-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -91,7 +91,7 @@ export default function Portfolio() {
           </motion.div>
 
           {researchItems.length > 0 ? (
-            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto">
               {researchItems.map((item, index) => (
                 <PortfolioCard
                   key={item.id}
@@ -113,8 +113,8 @@ export default function Portfolio() {
       </section>
 
       {/* Projects Section */}
-      <section id="problems" className="py-24 bg-slate-50 dark:bg-slate-800">
-        <div className="max-w-7xl mx-auto px-6">
+      <section id="problems" className="py-16 sm:py-24 bg-slate-50 dark:bg-slate-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -132,7 +132,7 @@ export default function Portfolio() {
           </motion.div>
 
           {problemItems.length > 0 ? (
-            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto">
               {problemItems.map((item, index) => (
                 <PortfolioCard
                   key={item.id}

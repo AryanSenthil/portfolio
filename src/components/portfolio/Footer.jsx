@@ -4,7 +4,7 @@ import { Mail, Linkedin, Github } from 'lucide-react';
 export default function Footer() {
   return (
     <footer className="bg-slate-900 dark:bg-slate-950 text-white py-12">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
             <h3 className="text-xl font-bold mb-2 dark:text-white">Aryan Yamini Senthil</h3>
