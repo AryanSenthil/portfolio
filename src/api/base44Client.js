@@ -61,7 +61,7 @@ const mockExperiences = [
     company: 'Dirac Technologies',
     location: 'Norman, OK',
     start_date: 'May 2024',
-    end_date: 'Jun 2025',
+    end_date: 'Aug 2025',
     current: false,
     description: [
       'Secured funding for autonomous robotic arms development',
