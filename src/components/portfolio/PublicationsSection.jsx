@@ -40,7 +40,7 @@ export default function PublicationsSection() {
           </h2>
           <div className="w-20 h-1 bg-blue-600 dark:bg-blue-400 mx-auto rounded-full mb-6"></div>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-            Research contributions and academic publications
+            Published work and academic contributions
           </p>
         </motion.div>
 

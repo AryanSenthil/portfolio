@@ -1,7 +1,7 @@
 /**
  * APPLE GLASS AESTHETIC - FRAMER MOTION CONFIGURATION
  * Sophisticated motion design utilities for academic portfolio
- * Designed for PhD professors and researchers
+ * Designed for professional portfolios
  */
 
 // ============================================

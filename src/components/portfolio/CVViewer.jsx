@@ -13,8 +13,8 @@ export default function CVViewer({ onClose }) {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/portfolio/cv.pdf';
-    link.download = 'Aryan_Yamini_Senthil_CV.pdf';
+    link.href = '/portfolio/aryansenthilresume.pdf';
+    link.download = 'Aryan_Senthil_Resume.pdf';
     link.click();
   };
 
@@ -43,7 +43,7 @@ export default function CVViewer({ onClose }) {
           {/* Header */}
           <div className="flex items-center justify-between p-4 border-b border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 shrink-0">
             <div className="flex items-center gap-3">
-              <h2 className="text-xl font-bold text-slate-900 dark:text-white">Curriculum Vitae</h2>
+              <h2 className="text-xl font-bold text-slate-900 dark:text-white">Resume</h2>
               <Button
                 variant="outline"
                 size="sm"
@@ -64,11 +64,11 @@ export default function CVViewer({ onClose }) {
             </Button>
           </div>
 
-          {/* CV Content - HTML Viewer */}
+          {/* Resume Content - HTML Viewer */}
           <div className="flex-1 overflow-hidden bg-slate-100 dark:bg-slate-950">
             <iframe
               src="/portfolio/cv/cv.html"
-              title="Curriculum Vitae"
+              title="Resume"
               className="w-full h-full border-0"
               style={{
                 backgroundColor: '#f5f5f5',

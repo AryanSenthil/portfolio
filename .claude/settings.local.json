@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npx vite)",
+      "Bash(node node_modulesvitebinvite.js)",
+      "Bash(node:*)"
+    ]
+  }
+}

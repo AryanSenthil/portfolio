@@ -71,7 +71,7 @@ export default function Portfolio() {
 
       <PublicationsSection />
 
-      {/* Research Section */}
+      {/* Research Projects Section */}
       <section id="research" className="py-16 sm:py-24 bg-white dark:bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <motion.div
@@ -82,7 +82,7 @@ export default function Portfolio() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
-              Research
+              Research Projects
             </h2>
             <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 mx-auto rounded-full mb-6"></div>
             <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">

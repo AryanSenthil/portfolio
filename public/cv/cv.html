@@ -5,7 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aryan Yamini Senthil - CV</title>
+    <title>Aryan Senthil - Resume</title>
+    <base target="_blank">
     <style>
         * {
             margin: 0;
@@ -130,11 +131,6 @@
             font-size: 10pt;
         }
 
-        .research-interests {
-            font-size: 11pt;
-            margin-top: 5px;
-        }
-
         .publication-title {
             font-weight: bold;
             font-size: 10.5pt;
@@ -171,9 +167,36 @@
             cursor: default;
         }
 
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .project-title {
+            font-weight: bold;
+            font-size: 10.5pt;
+        }
+
+        .project-link a {
+            font-size: 10pt;
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .project-link a:hover {
+            text-decoration: underline;
+        }
+
         .award {
             font-size: 10.5pt;
             margin-top: 5px;
+        }
+
+        .skills-category {
+            font-size: 10.5pt;
+            margin-bottom: 5px;
         }
 
         @media print {
@@ -191,11 +214,11 @@
             .container {
                 padding: 30px 20px;
             }
-            
-            .job-header, .education-header {
+
+            .job-header, .education-header, .project-header {
                 flex-direction: column;
             }
-            
+
             .date {
                 margin-top: 3px;
             }
@@ -206,17 +229,9 @@
     <div class="container">
         <!-- Header -->
         <div class="header">
-            <h1>ARYAN YAMINI SENTHIL</h1>
+            <h1>ARYAN SENTHIL</h1>
             <div class="contact-info">
-                <a href="mailto:aryanyaminisenthil@gmail.com">aryanyaminisenthil@gmail.com</a> • (405)-414-7622 • Norman, OK • <span class="link-like">aryansenthil.github.io/portfolio/</span>
-            </div>
-        </div>
-
-        <!-- Research Interests -->
-        <div class="section">
-            <div class="section-title">Research Interests</div>
-            <div class="research-interests">
-                <strong>Deep Learning • Reinforcement Learning (Agents) • Multimodal AI</strong>
+                US CITIZEN &bull; <a href="mailto:aryanyaminisenthil@gmail.com">aryanyaminisenthil@gmail.com</a> &bull; +1 (405)-414-7622 &bull; Norman, OK 73071 &bull; <span class="link-like">aryansenthil.github.io/portfolio/</span>
             </div>
         </div>
 
@@ -225,32 +240,46 @@
             <div class="section-title">Education</div>
             <div class="subsection">
                 <div class="education-header">
-                    <div class="degree">B.S. Engineering Physics</div>
-                    <div class="date">Expected: Dec 2025</div>
+                    <div class="degree">B.S. Engineering Physics (Physics &amp; Aerospace Engineering)</div>
+                    <div class="date">Graduated: Dec 2025</div>
                 </div>
                 <div class="university">
-                    <strong>The University of Oklahoma</strong> | Norman, OK | Curriculum GPA: 3.4
+                    <strong>The University of Oklahoma</strong> | Norman, OK
+                </div>
+                <div class="university">
+                    GPA: 3.4 | Dean's List | Top 10% of program
                 </div>
             </div>
         </div>
 
-        <!-- Research Experience -->
+        <!-- Professional Experience -->
         <div class="section">
-            <div class="section-title">Research Experience</div>
+            <div class="section-title">Professional Experience</div>
             <div class="subsection">
                 <div class="job-header">
                     <div class="job-title">Undergraduate Research Assistant | University of Oklahoma</div>
+                    <div class="date">May 2022 - Dec 2025</div>
                 </div>
-                <div class="date">May 2022 – September 2024, August 2025 - Present</div>
-                <div class="advisor">Advisor: Dr. Mrinal Saha; Postdoctoral Mentor: Dr. Kuntal Maity</div>
+                <div class="advisor">Advisor: Dr. Mrinal Saha</div>
                 <div class="content">
                     <ul>
-                        <li>Conducted experimental research on <strong>smart materials</strong> exhibiting <strong>flexoelectric, piezoelectric, and pyroelectric properties</strong>, investigating their <strong>electrical response to mechanical and thermal stimuli</strong> and applying <strong>deep learning to analyze and predict these responses</strong>, leading to a publication.</li>
-                        <li>Designed and fabricated <strong>smart sensors</strong> using <strong>silica-based polymers</strong> integrated with these smart materials to capture and characterize their <strong>electromechanical behavior</strong>. These sensors were <strong>3D printed using a custom-formulated gel</strong>, making them <strong>soft, flexible, and ultrasensitive</strong>.</li>
-                        <li>Developed and researched <strong>deep learning algorithms</strong> that leverage the <strong>intrinsic electric fields</strong> of these smart sensors to generate measurable outputs <strong>without the need for external power</strong>, advancing progress toward <strong>autonomous, AI-driven sensing technologies</strong>.</li>
-                        <li>Developed a <strong>novel multi-task architecture</strong> that simultaneously predicts <strong>load type and deformation</strong> from voltage-time data. Designed a <strong>spectrogram-based CNN</strong> achieving <strong>100% classification accuracy</strong> and a <strong>Wide &amp; Deep network</strong> achieving <strong>RMSE of 0.041mm</strong> for regression. Merged both into an <strong>end-to-end model</strong> handling classification and continuous prediction.</li>
-                        <li>Developing a <strong>transformer-based architecture</strong> for <strong>damage detection and localization</strong> in carbon fiber composites. Established baseline with an initial <strong>CNN achieving 100% accuracy</strong>, now advancing to transformers to capture <strong>long-range dependencies</strong> for precise spatial localization.</li>
-                        <li>Implemented <strong>end-to-end Python ML pipelines</strong> incorporating preprocessing, feature engineering, training, <strong>hyperparameter optimization</strong>, and evaluation, demonstrating proficiency in <strong>production-grade workflows</strong>.</li>
+                        <li>Operated <strong>Direct Ink Writing (DIW)</strong> 3D printers to fabricate <strong>CAD</strong>-designed lattice structures with a proprietary silica-polymer gel, reducing print failure rate from 90% to 10%</li>
+                        <li>Performed tensile testing on flexible sensor specimens using <strong>Instron Universal Tensile machine</strong>, analyzing stress-strain data in <strong>MATLAB</strong> to characterize load distribution across 140+ samples</li>
+                        <li>Developed a spectrogram-based CNN in <strong>TensorFlow</strong> to detect and localize damage in carbon fiber composites, achieving 90% classification accuracy</li>
+                        <li>Built and deployed a full-stack application on <strong>Linux (Python backend, TypeScript frontend)</strong> for data preprocessing, model training, and report generation, leading to lab-wide adoption of deep learning</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <div class="job-header">
+                    <div class="job-title">CEO and Cofounder | Dirac Technologies</div>
+                    <div class="date">May 2024 - Aug 2025</div>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>Secured <strong>$10K in funding</strong> and led a <strong>5-member cross-functional team</strong> to design and develop two autonomous 6-axis robotic arms capable of learning manipulation tasks through imitation learning</li>
+                        <li>Engineered object detection (<strong>YOLO</strong>), teleoperation, and embedded control modules on <strong>NVIDIA Jetson</strong>, enabling the system to reproduce human-guided demonstrations with 90% accuracy after 2-3 hours of training</li>
                     </ul>
                 </div>
             </div>
@@ -260,93 +289,88 @@
         <div class="section">
             <div class="section-title">Publications</div>
             <div class="subsection">
-                <div class="publication-title">
-                    "Design of Flexible and Ultrasensitive 3D Printed Flexoelectric Sensor for Self-Powered Damage Detection of Composite Structures"
-                </div>
                 <div class="publication-authors">
                     Kuntal Maity, Mrinal Saha, <strong>Aryan Senthil</strong>, Anirban Mondal.
                 </div>
+                <div class="publication-title">
+                    "Design of Flexible and Ultrasensitive 3D Printed Flexoelectric Sensor for Self-Powered Damage Detection of Composite Structures"
+                </div>
                 <div class="publication-venue">
-                    39th Annual Technical Conference of the American Society for Composites (ASC) [In Press]
+                    The American Society for Composites (ASC), Volume 4, San Diego, CA, 2024
                 </div>
                 <div class="publication-link">
-                    <a href="https://composites.uw.edu/ASC/?q=2024" target="_blank">https://composites.uw.edu/ASC/?q=2024</a>
+                    <a href="https://doi.org/10.1007/978-3-032-05216-2_20" target="_blank">https://doi.org/10.1007/978-3-032-05216-2_20</a>
                 </div>
             </div>
         </div>
 
-        <!-- Honors & Awards -->
+        <!-- Projects -->
         <div class="section">
-            <div class="section-title">Honors &amp; Awards</div>
-            <div class="award">
-                <strong>Dean's List</strong>, Gallogly College of Engineering, University of Oklahoma
+            <div class="section-title">Projects</div>
+
+            <div class="subsection">
+                <div class="project-header">
+                    <div class="project-title">Deep Learning-Enabled Bio-Sourced Piezoelectric Pressure Sensor</div>
+                    <div class="project-link"><a href="https://github.com/AryanSenthil/Onion_Sensor" target="_blank">github.com/AryanSenthil/Onion_Sensor</a></div>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>Formulated self-powered bio-composite piezoelectric sensors using onion peel cellulose dispersed in Ecoflex silicone matrix; tuned ink rheology for dimensional stability and optimized electrode design for signal extraction</li>
+                        <li>Built two-stage TensorFlow pipeline for pressure sensing: CNN classifier on STFT spectrograms for load type identification (100% accuracy) and Wide &amp; Deep regressor for applied load prediction (R&sup2; = 0.9987)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <div class="project-header">
+                    <div class="project-title">AI-Enabled Structural Health Monitoring for Carbon Fiber Composites</div>
+                    <div class="project-link"><a href="https://github.com/AryanSenthil/final_capstone" target="_blank">github.com/AryanSenthil/final_capstone</a></div>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>Developed CNN and ResNet architectures for damage detection in carbon fiber composites using custom STFT resolutions, achieving &gt;90% classification accuracy with spatial localization</li>
+                        <li>Built full-stack diagnostic platform (FastAPI + TypeScript) with end-to-end ML pipelines, CUDA-accelerated training, and real-time interactive visualizations</li>
+                        <li>Designed agent-compatible tool architecture exposing ML pipelines to LLMs, enabling natural language-driven damage diagnostics for non-technical users</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <div class="project-header">
+                    <div class="project-title">Autocalibration Algorithm for Instron Contact Detection</div>
+                    <div class="project-link"><a href="https://github.com/AryanSenthil/Contact-Detection" target="_blank">github.com/AryanSenthil/Contact-Detection</a></div>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>Developed autocalibration algorithm to identify load cell contact point using binning-based slope transition detection, eliminating positioning errors in force-displacement data and improving test repeatability (&plusmn;0.013 mm precision)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <div class="project-header">
+                    <div class="project-title">Automated Laser Tracking for Cavendish Experiment</div>
+                    <div class="project-link"><a href="https://github.com/AryanSenthil/Cavendish" target="_blank">github.com/AryanSenthil/Cavendish</a></div>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>Developed computer vision algorithm in Wolfram Mathematica for Cavendish experiment, replacing manual observation with automated laser coordinate mapping; adopted as laboratory-wide standard</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
-        <!-- Professional Experience -->
+        <!-- Skills -->
         <div class="section">
-            <div class="section-title">Professional Experience</div>
-            <div class="subsection">
-                <div class="job-header">
-                    <div class="job-title">CEO and Cofounder</div>
-                    <div class="date">May 2024 - Jun 2025</div>
-                </div>
-                <div class="company">Dirac Technologies | Norman, OK</div>
-                <div class="content">
-                    <ul>
-                        <li>Secured funding to design and develop <strong>two autonomous 6 axis robotic arms</strong> capable of learning manipulation tasks through <strong>imitation learning frameworks</strong>.</li>
-                        <li>Engineered and integrated <strong>object detection, teleoperation, and embedded control modules</strong>, enabling the system to <strong>learn and reproduce human-guided teleoperated demonstrations</strong> with high precision.</li>
-                        <li>Led a <strong>5-member cross functional team</strong> in hardware design, embedded systems, and AI integrations, directing efforts to synchronize teleoperation data with autonomous robotic performance.</li>
-                    </ul>
-                </div>
+            <div class="section-title">Skills</div>
+            <div class="skills-category">
+                <strong>Software:</strong> Python, TensorFlow, PyTorch, Keras, MATLAB, TypeScript, React, FastAPI, Linux, Git, CUDA, Docker, AWS, Redis, PostgreSQL, Computer Vision, Deep Learning, Signal Processing
             </div>
-
-            <div class="subsection">
-                <div class="job-header">
-                    <div class="job-title">Math Tutor</div>
-                    <div class="date">Oct 2022 - May 2023</div>
-                </div>
-                <div class="company">Math Center - University of Oklahoma | Norman, OK</div>
-                <div class="content">
-                    <ul>
-                        <li><strong>Delivered personalized tutoring</strong> in <em>Calculus, Differential Equations, Linear Algebra</em>, and <em>Physical Mathematics</em> for individuals and small groups.</li>
-                        <li><strong>Guided students</strong> through homework, exam preparation, and practice tests, resulting in <strong>improved academic performance and confidence</strong>.</li>
-                    </ul>
-                </div>
+            <div class="skills-category">
+                <strong>Aerospace &amp; Mechanical Engineering:</strong> CAD, Structural Analysis, Composites, Stress-Strain Analysis, Finite Element Methods, Flight Dynamics
             </div>
-        </div>
-
-        <!-- Leadership Experience -->
-        <div class="section">
-            <div class="section-title">Leadership Experience</div>
-            <div class="subsection">
-                <div class="job-header">
-                    <div class="job-title">Community Service Chair</div>
-                    <div class="date">Aug 2022 - Dec 2023</div>
-                </div>
-                <div class="company">Pi Kappa Phi Fraternity - University of Oklahoma | Norman, OK</div>
-                <div class="content">
-                    <ul>
-                        <li>Directed and organized <strong>The Ability Experience</strong>, Pi Kappa Phi's national philanthropy initiative, to empower individuals with disabilities through service and awareness campaigns.</li>
-                        <li>Coordinated and managed fundraising and volunteer events, raising funds to support children with disabilities and expanding accessibility initiatives.</li>
-                        <li>Collaborated with university officials and community partners to develop outreach programs and recruit fraternity members for sustained volunteer engagement.</li>
-                        <li>Led chapter participation in <strong>University of Oklahoma's "The Big Event" &amp; "The Small Event,"</strong> the university's largest community service project, strengthening partnerships with local nonprofits.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="subsection">
-                <div class="job-header">
-                    <div class="job-title">Executive Board Member</div>
-                    <div class="date">Sep 2020 - May 2021</div>
-                </div>
-                <div class="company">OU Cousins - University of Oklahoma | Norman, OK</div>
-                <div class="content">
-                    <ul>
-                        <li>Coordinated and facilitated intercultural programs fostering friendship and cultural exchange between U.S. and international students.</li>
-                        <li>Collaborated with university departments and student organizations to promote diversity, inclusion, and global awareness across campus.</li>
-                    </ul>
-                </div>
+            <div class="skills-category">
+                <strong>Materials:</strong> DIW 3D Printing, Instron Tensile Testing, Rheology, Silica Polymers, Carbon Fiber Composites, Sensor Fabrication, Piezo/Flexo/Pyroelectric Materials
             </div>
         </div>
 

@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-export default function PDFViewer({ pdfUrl, onClose, title = "CV" }) {
+export default function PDFViewer({ pdfUrl, onClose, title = "Resume" }) {
   useEffect(() => {
     // Prevent body scroll when modal is open
     document.body.style.overflow = 'hidden';
@@ -17,7 +17,7 @@ export default function PDFViewer({ pdfUrl, onClose, title = "CV" }) {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = pdfUrl;
-    link.download = 'Aryan_Yamini_Senthil_CV.pdf';
+    link.download = 'Aryan_Senthil_Resume.pdf';
     link.click();
   };
 

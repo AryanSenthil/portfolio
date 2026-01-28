@@ -26,8 +26,8 @@ export default function AboutSection() {
     {
       icon: Target,
       title: 'Goals',
-      description: 'Pursuing CS PhD opportunities',
-      detail: 'Focus on Deep Learning & Autonomous Systems'
+      description: 'Seeking industry opportunities',
+      detail: 'Aerospace Engineering, Materials & AI'
     }
   ];
 
@@ -103,9 +103,9 @@ export default function AboutSection() {
                 transition={{ duration: 0.5, delay: 0.5 }}
                 viewport={{ once: true }}
               >
-                Throughout my undergraduate journey at the University of Oklahoma, I've cultivated a deep passion for deep learning and autonomous systems.
-                My coursework in Engineering Physics has provided me with a strong theoretical foundation, while research
-                experiences have honed my practical skills in applied machine learning, sensor design, and algorithm development.
+                Throughout my journey at the University of Oklahoma, I cultivated a deep passion for aerospace engineering, advanced materials, and AI.
+                My degree in Engineering Physics, a program combining physics and aerospace engineering, provided me with a strong theoretical foundation in structural analysis, flight dynamics, composites, and finite element methods,
+                while hands-on experiences honed my practical skills in applied machine learning, sensor fabrication, and algorithm development. I graduated in the top 10% of my program.
               </motion.p>
               <motion.p
                 initial={{ opacity: 0, x: -20 }}
@@ -113,10 +113,10 @@ export default function AboutSection() {
                 transition={{ duration: 0.5, delay: 0.6 }}
                 viewport={{ once: true }}
               >
-                As an Undergraduate Researcher working under the guidance of Dr. Mrinal Saha and Postdoctoral Mentor Dr. Kuntal Maity,
-                I've conducted experimental research on smart materials and developed deep learning algorithms for autonomous sensing technologies.
-                My work on flexoelectric sensors and deep learning-based damage detection has contributed to cutting-edge research in structural health monitoring,
-                resulting in a publication at the 39th Annual Technical Conference of the American Society for Composites.
+                As a Research Assistant working under the guidance of Dr. Mrinal Saha,
+                I conducted experimental research on smart materials and developed deep learning algorithms for autonomous sensing technologies.
+                My work on flexoelectric sensors and deep learning-based damage detection contributed to cutting-edge advancements in structural health monitoring,
+                resulting in a publication at the American Society for Composites.
               </motion.p>
               <motion.p
                 initial={{ opacity: 0, x: -20 }}
@@ -125,8 +125,8 @@ export default function AboutSection() {
                 viewport={{ once: true }}
               >
                 Beyond research, I founded Dirac Technologies where I led the development of autonomous robotic arms using imitation learning frameworks,
-                and have been recognized on the Dean's List for academic excellence. As I prepare to graduate in December 2025, I'm eager to continue this journey at the doctoral level,
-                where I can delve deeper into deep learning, reinforcement learning, and multimodal AI and collaborate with leading researchers in the field.
+                and have been recognized on the Dean's List for academic excellence. Having graduated in December 2025, I'm eager to apply my expertise in aerospace engineering, materials science, and AI
+                to solve challenging industry problems and drive innovation.
               </motion.p>
             </div>
           </div>

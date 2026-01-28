@@ -121,9 +121,9 @@ const mockPublications = [
     id: '1',
     title: 'Design of Flexible and Ultrasensitive 3D Printed Flexoelectric Sensor for Self-Powered Damage Detection of Composite Structures',
     authors: 'Kuntal Maity, Mrinal Saha, Aryan Senthil, Anirban Mondal',
-    venue: '39th Annual Technical Conference of the American Society for Composites (ASC) [In Press]',
+    venue: 'The American Society for Composites (ASC), Volume 4, San Diego, CA',
     year: 2024,
-    url: 'https://composites.uw.edu/ASC/?q=2024',
+    url: 'https://doi.org/10.1007/978-3-032-05216-2_20',
     order: 1
   }
 ];

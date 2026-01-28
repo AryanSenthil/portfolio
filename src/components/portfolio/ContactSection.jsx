@@ -74,8 +74,8 @@ export default function ContactSection() {
             className="h-1 bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-500 dark:to-blue-400 mx-auto rounded-full mb-6"
           ></motion.div>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-            I'm actively seeking PhD opportunities and would love to hear from professors,
-            recruiters, and collaborators interested in my work.
+            I'm actively seeking job opportunities in aerospace engineering, materials science, and AI.
+            I'd love to hear from recruiters, hiring managers, and collaborators interested in my work.
           </p>
         </motion.div>
 
@@ -206,7 +206,7 @@ export default function ContactSection() {
                     name="subject"
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                    placeholder="PhD Opportunity Inquiry"
+                    placeholder="Job Opportunity Inquiry"
                     className="bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-700 dark:text-white"
                   />
                 </div>
@@ -220,7 +220,7 @@ export default function ContactSection() {
                     name="message"
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    placeholder="Tell me about your research interests or opportunities..."
+                    placeholder="Tell me about the role or opportunities..."
                     rows={5}
                     className="bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-700 resize-none dark:text-white"
                   />
