@@ -5,7 +5,9 @@
       "Bash(npm run dev:*)",
       "Bash(npx vite)",
       "Bash(node node_modulesvitebinvite.js)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(gh run list:*)",
+      "Bash(npm run build:*)"
     ]
   }
 }
