@@ -54,8 +54,8 @@ export default function ExperienceSection() {
               viewport={{ once: true }}
               className="absolute left-6 w-0.5 bg-gradient-to-b from-blue-500/50 via-slate-700 to-slate-700 dark:from-blue-400/50 dark:via-slate-600 dark:to-slate-600 hidden md:block origin-top"
               style={{
-                top: 'calc(3rem + 1.5rem)',
-                height: `calc(100% - ${experiences.length * 3}rem - 9rem)`
+                top: '3rem',
+                bottom: '12rem'
               }}
             ></motion.div>
           )}

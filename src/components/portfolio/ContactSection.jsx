@@ -136,7 +136,7 @@ export default function ContactSection() {
               </motion.a>
 
               <motion.a
-                href="https://www.linkedin.com/in/aryan-yamini-senthil-18125b243"
+                href="https://www.linkedin.com/in/aryansenthil"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover="hover"

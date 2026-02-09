@@ -27,7 +27,7 @@ export default function AboutSection() {
       icon: Target,
       title: 'Goals',
       description: 'Seeking industry opportunities',
-      detail: 'Aerospace Engineering, Materials & AI'
+      detail: 'Aerospace Engineering, Manufacturing & AI'
     }
   ];
 
@@ -103,7 +103,7 @@ export default function AboutSection() {
                 transition={{ duration: 0.5, delay: 0.5 }}
                 viewport={{ once: true }}
               >
-                Throughout my journey at the University of Oklahoma, I cultivated a deep passion for aerospace engineering, advanced materials, and AI.
+                Throughout my journey at the University of Oklahoma, I cultivated a deep passion for aerospace engineering, manufacturing, and AI.
                 My degree in Engineering Physics, a program combining physics and aerospace engineering, provided me with a strong theoretical foundation in structural analysis, flight dynamics, composites, and finite element methods,
                 while hands-on experiences honed my practical skills in applied machine learning, sensor fabrication, and algorithm development. I graduated in the top 10% of my program.
               </motion.p>
@@ -125,7 +125,7 @@ export default function AboutSection() {
                 viewport={{ once: true }}
               >
                 Beyond research, I founded Dirac Technologies where I led the development of autonomous robotic arms using imitation learning frameworks,
-                and have been recognized on the Dean's List for academic excellence. Having graduated in December 2025, I'm eager to apply my expertise in aerospace engineering, materials science, and AI
+                and have been recognized on the Dean's List for academic excellence. Having graduated in December 2025, I'm eager to apply my expertise in aerospace engineering, manufacturing, and AI
                 to solve challenging industry problems and drive innovation.
               </motion.p>
             </div>

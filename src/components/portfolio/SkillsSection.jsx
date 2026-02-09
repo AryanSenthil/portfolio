@@ -6,10 +6,10 @@ import {
   Bot,
   Cpu,
   Database,
-  Terminal,
+  Cloud,
   Box,
   Calculator,
-  Cloud
+  Wrench
 } from 'lucide-react';
 import { easings, hoverLift, iconRotate } from '@/utils/motionConfig';
 
@@ -18,47 +18,47 @@ export default function SkillsSection() {
     {
       icon: Code2,
       title: 'Programming Languages',
-      skills: ['Python', 'C++', 'R', 'MATLAB', 'Mathematica']
+      skills: ['Python', 'C/C++', 'MATLAB', 'TypeScript', 'Bash']
     },
     {
       icon: Brain,
-      title: 'Machine Learning Frameworks',
-      skills: ['PyTorch', 'TensorFlow', 'Keras', 'scikit-learn']
+      title: 'Machine Learning & AI',
+      skills: ['TensorFlow', 'PyTorch', 'Keras', 'Computer Vision', 'Deep Learning', 'Signal Processing']
     },
     {
       icon: Bot,
-      title: 'AI Agents & LLM Tools',
-      skills: ['LangChain', 'LangGraph', 'LlamaIndex', 'RAG Systems']
-    },
-    {
-      icon: Cpu,
-      title: 'Robotics & Embedded Systems',
-      skills: ['ROS 2', 'NVIDIA Jetson', 'CUDA']
+      title: 'AI Agents & LLMs',
+      skills: ['LLMs', 'Agents', 'RAG', 'SLAM']
     },
     {
       icon: Database,
-      title: 'Data Engineering & Databases',
-      skills: ['SQL', 'Redis', 'Weaviate', 'PostgreSQL']
-    },
-    {
-      icon: Terminal,
-      title: 'DevOps & Development Tools',
-      skills: ['Linux', 'Git', 'Docker', 'CI/CD']
-    },
-    {
-      icon: Box,
-      title: 'CAD & Design',
-      skills: ['SolidWorks', 'Shapr3D']
-    },
-    {
-      icon: Calculator,
-      title: 'Scientific Computing & Documentation',
-      skills: ['LaTeX', 'Jupyter', 'NumPy', 'Pandas']
+      title: 'Web & Backend',
+      skills: ['React', 'FastAPI', 'PostgreSQL', 'Redis']
     },
     {
       icon: Cloud,
-      title: 'Cloud & Infrastructure',
-      skills: ['AWS', 'GCP', 'Azure', 'Kubernetes']
+      title: 'DevOps & Cloud',
+      skills: ['Linux', 'Git', 'Docker', 'AWS', 'CI/CD', 'CUDA']
+    },
+    {
+      icon: Cpu,
+      title: 'Robotics & Embedded',
+      skills: ['ROS', 'NVIDIA Jetson', 'Arduino', 'Raspberry Pi', 'Intel RealSense', 'UART']
+    },
+    {
+      icon: Box,
+      title: 'CAD & Simulation',
+      skills: ['SolidWorks', 'Fusion 360', 'Shapr3D', 'ANSYS', 'ANSYS Fluent', 'Altium Designer']
+    },
+    {
+      icon: Calculator,
+      title: 'Engineering Analysis',
+      skills: ['FEA', 'CFD', 'CAM', 'CAE', 'CNC', 'G-code']
+    },
+    {
+      icon: Wrench,
+      title: 'Manufacturing & Fabrication',
+      skills: ['DIW 3D Printing', 'Hand Layup & Vacuum Bagging', 'Instron Tensile Testing', 'Soldering']
     }
   ];
 

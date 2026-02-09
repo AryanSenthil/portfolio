@@ -26,7 +26,7 @@ export default function HeroSection() {
                 <Mail className="w-5 h-5 text-white" />
               </a>
               <a
-                href="https://www.linkedin.com/in/aryan-yamini-senthil-18125b243"
+                href="https://www.linkedin.com/in/aryansenthil"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-slate-700 dark:bg-slate-600 hover:bg-blue-600 dark:hover:bg-blue-600 rounded-lg transition-all"
@@ -53,7 +53,7 @@ export default function HeroSection() {
                 Aryan Yamini Senthil
               </h1>
               <p className="text-lg sm:text-xl md:text-2xl text-blue-600 dark:text-blue-400 font-medium">
-                Engineering Physics Graduate | Seeking Opportunities in Aerospace, Materials & AI
+                Engineering Physics Graduate | Seeking Opportunities in Aerospace, Manufacturing & AI
               </p>
             </div>
 
@@ -61,7 +61,7 @@ export default function HeroSection() {
 
             <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-xl text-center md:text-left">
               I am an Engineering Physics graduate with a cross-disciplinary background in physics and aerospace engineering.
-              With a strong foundation in machine learning, materials, and computer-aided design, I'm seeking job opportunities
+              With a strong foundation in machine learning, manufacturing, and computer-aided design, I'm seeking job opportunities
               to contribute to cutting-edge engineering and make meaningful impact in industry.
             </p>
 

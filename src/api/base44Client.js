@@ -73,6 +73,21 @@ const mockExperiences = [
   },
   {
     id: '3',
+    position: 'Robotics Engineer Intern',
+    company: 'AIROU',
+    location: 'Norman, OK',
+    start_date: 'Jun 2024',
+    end_date: 'Aug 2024',
+    current: false,
+    description: [
+      'Designed custom ultrasonic rangefinder PCB in Altium Designer, reducing module weight by 20%',
+      'Performed CFD analysis in ANSYS Fluent to optimize drone aerodynamic profile',
+      'Implemented LiDAR SLAM in MATLAB and ROS for autonomous mapping'
+    ],
+    order: 3
+  },
+  {
+    id: '4',
     position: 'Math Tutor',
     company: 'Math Center - University of Oklahoma',
     location: 'Norman, OK',
@@ -83,10 +98,10 @@ const mockExperiences = [
       'Tutored Calculus, Differential Equations, and Linear Algebra',
       'Guided students through exams and homework'
     ],
-    order: 3
+    order: 4
   },
   {
-    id: '4',
+    id: '5',
     position: 'Community Service Chair',
     company: 'Pi Kappa Phi Fraternity - University of Oklahoma',
     location: 'Norman, OK',
@@ -98,10 +113,10 @@ const mockExperiences = [
       'Coordinated fundraising and volunteer events',
       'Led participation in university\'s largest service projects'
     ],
-    order: 4
+    order: 5
   },
   {
-    id: '5',
+    id: '6',
     position: 'Executive Board Member',
     company: 'OU Cousins - University of Oklahoma',
     location: 'Norman, OK',
@@ -112,7 +127,7 @@ const mockExperiences = [
       'Facilitated intercultural programs for international students',
       'Promoted diversity and inclusion across campus'
     ],
-    order: 5
+    order: 6
   }
 ];
 
